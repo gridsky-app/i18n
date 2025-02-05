@@ -22,6 +22,7 @@ export default {
       messages: 'Messages',
       profile: 'Profile',
       settings: 'Settings',
+      create: 'Create',
       other: 'Other',
     },
     timeline: {
@@ -229,7 +230,7 @@ export default {
             placeholder: "#0095f6",
           },
           animationEnabled: {
-            label: "Show animation",
+            label: "Use cube animation",
             title: "Enabled",
           },
           animationColors: {
