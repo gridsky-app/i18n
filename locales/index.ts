@@ -238,6 +238,14 @@ export default {
           },
         },
       },
+      language: {
+        appBar: 'Language',
+        fields: {
+          language: {
+            label: "Language",
+          },
+        },
+      },
       menu: {
         appBar: 'Account & Settings',
       },
