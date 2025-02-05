@@ -184,6 +184,7 @@ export default {
         privacy: 'Privacy',
         security: 'Security',
         language: 'Language',
+        grid: 'Profile Grids',
         badges: 'Stand out',
         help: 'Support',
         about: 'About',
@@ -244,6 +245,12 @@ export default {
           language: {
             label: "Language",
           },
+        },
+      },
+      grid: {
+        appBar: 'Profile Grids',
+        fields: {
+
         },
       },
       menu: {
