@@ -11,7 +11,12 @@ export default defineI18nLocale(async locale => {
                 create: 'Create',
                 submit: 'Submit',
                 post: 'Post',
+                done: 'Done',
+                cancel: 'Cancel',
             },
+            list: {
+                nothingToShow: "It's empty here",
+            }
         },
         navigation: {
             home: 'Home',
@@ -25,11 +30,19 @@ export default defineI18nLocale(async locale => {
             create: 'Create',
             other: 'Other',
         },
-        timeline: {
+        following: {
             title: 'Timeline',
         },
         search: {
             title: 'Search',
+            trendingTopics: {
+                title: 'Trending'
+            },
+            categories: {
+                manager: {
+                    title: 'Saved searches',
+                },
+            },
         },
         explore: {
             title: 'Explore',
@@ -41,6 +54,10 @@ export default defineI18nLocale(async locale => {
                 title: 'Discover',
                 appBar: 'Discover',
             },
+            latest: {
+                title: 'Latest',
+                appBar: 'Latest',
+            },
             following: {
                 title: 'Following',
                 appBar: 'Following',
@@ -50,10 +67,35 @@ export default defineI18nLocale(async locale => {
                 appBar: 'Search',
             },
         },
-        tabs: {
-            discover: 'Discover',
-            following: 'Following',
-            feeds: 'Feeds',
+        timeline: {
+            list: {
+                name: 'Posts'
+            }
+        },
+        feed: {
+            list: {
+                title: 'Feeds',
+                appBar: 'Feeds',
+            },
+            static: {
+                following: {
+                    title: 'Following',
+                    description: 'Personal feed',
+                },
+            },
+            createdBy: `Feed by {handle}`,
+            categories: {
+                manager: {
+                    title: 'Feed categories',
+                },
+            },
+            suggestions: {
+                title: 'Suggested feeds',
+            },
+            like: {
+                person: 'Liked by 1',
+                people: 'Liked by {count}'
+            },
         },
         account: {
             login: {
@@ -88,18 +130,9 @@ export default defineI18nLocale(async locale => {
             action: {
                 or: 'or',
                 lostPassword: 'Lost password?',
+                addAccount: 'Add account',
                 logout: 'Logout',
             }
-        },
-        feed: {
-            createdBy: `Feed created by {handle}`,
-            suggestions: {
-                title: 'Suggested feeds',
-            },
-            like: {
-                person: 'Liked by 1',
-                people: 'Liked by {count}'
-            },
         },
         profile: {
             stats: {
@@ -157,12 +190,17 @@ export default defineI18nLocale(async locale => {
             replies: {
                 empty: "It's empty here"
             },
-            like: {
+            likes: {
                 noOne: 'Be the first to like',
-                person: '1 person likes this',
-                people: '{count} people like this',
+                person: '<span class="gsky-thread-likes-count">1 person</span> likes this',
+                personWithHighlight: 'Liked by {names}',
+                people: '<span class="gsky-thread-likes-count">{count} people</span> like this',
+                peopleWithHighlight: 'Liked by {names} and <span class="gsky-thread-likes-count">{count} people</span>',
                 personShort: '1 like',
                 peopleShort: '{count} likes',
+                bottomSheet: {
+                    title: 'Likes'
+                },
             },
         },
         notifications: {
@@ -186,12 +224,45 @@ export default defineI18nLocale(async locale => {
                 language: 'Language',
                 grid: 'Profile Grids',
                 badges: 'Stand out',
-                help: 'Support',
+                development: 'Development',
+                support: 'Support',
                 about: 'About',
+                help: 'Help',
+                community: 'Community',
                 whatsnew: 'What\'s new',
+            },
+            main: {
+                appBar: 'Dashboard',
+                section: {
+                    password: {
+                        title: 'Password and authentication',
+                    },
+                }
             },
             account: {
                 appBar: 'Account',
+            },
+            profile: {
+                appBar: 'Profile',
+                fields: {
+                    avatar: {
+                        title: "Avatar",
+                        action: {
+                            change: 'Change avatar',
+                            remove: 'Remove avatar',
+                        }
+                    },
+                    banner: {
+                        title: "Banner",
+                        action: {
+                            change: 'Change banner',
+                            remove: 'Remove banner',
+                        }
+                    },
+                }
+            },
+            appearance: {
+                appBar: 'Appearance',
                 fields: {
                     handle: {
                         label: "Username",
@@ -208,16 +279,6 @@ export default defineI18nLocale(async locale => {
                         placeholder: "Bio",
                         description: "Your bio is visible to everyone on and off Gridsky"
                     },
-                    avatar: {
-                        name: "Avatar",
-                        label: "Avatar",
-                        placeholder: "Avatar",
-                    },
-                }
-            },
-            appearance: {
-                appBar: 'Appearance',
-                fields: {
                     themeName: {
                         label: "Theme",
                         placeholder: "theme",
@@ -231,8 +292,10 @@ export default defineI18nLocale(async locale => {
                         placeholder: "#0095f6",
                     },
                     animationEnabled: {
-                        label: "Use cube animation",
-                        title: "Enabled",
+                        title: "Cubes animation",
+                    },
+                    animationShowBannerInstead: {
+                        title: "Show banner instead",
                     },
                     animationColors: {
                         label: "Grid configurator",
@@ -256,16 +319,19 @@ export default defineI18nLocale(async locale => {
                 },
                 fields: {
                     name: {
-                        label: "Name",
+                        label: "Grid name",
                         placeholder: "grid name",
                     },
                     icon: {
-                        label: "Icon",
+                        label: "Grid icon",
                         placeholder: "lucide:grid",
                     },
                     filter: {
-                        label: "Filter",
+                        label: "Filter by hashtags",
                         placeholder: "#hashtag",
+                    },
+                    layout: {
+                        label: "Grid layout",
                     },
                 },
             },
@@ -276,7 +342,29 @@ export default defineI18nLocale(async locale => {
                 appBar: 'About',
             }
         },
+        timeAgo: {
+            "just-now": "just now",
+            "ago": "{0} ago",
+            "in": "in {0}",
+            "last-month": "last month",
+            "next-month": "next month",
+            "month": "month | months",
+            "last-year": "last year",
+            "next-year": "next year",
+            "year": "year | years",
+            "yesterday": "yesterday",
+            "tomorrow": "tomorrow",
+            "day": "day | days",
+            "last-week": "last week",
+            "next-week": "next week",
+            "week": "week | weeks",
+            "hour": "hour | hours",
+            "minute": "minute | minutes",
+            "second": "second | seconds"
+        },
         $vuetify: {
+            badge: '',
+            loading: '',
             datePicker: {
                 title: 'Select date'
             }
