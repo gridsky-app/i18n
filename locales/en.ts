@@ -9,14 +9,17 @@ export default defineI18nLocale(async locale => {
                 reset: 'Reset',
                 close: 'Close',
                 create: 'Create',
+                share: 'Share',
                 submit: 'Submit',
+                saveChanges: 'Save changes',
                 post: 'Post',
                 done: 'Done',
                 cancel: 'Cancel',
             },
             list: {
-                nothingToShow: "It's empty here",
-            }
+                empty: "It's empty here",
+            },
+            soon: 'Soon'
         },
         navigation: {
             home: 'Home',
@@ -115,22 +118,18 @@ export default defineI18nLocale(async locale => {
                     action: 'Login',
                 }
             },
-            resetPassword: {
-                form: {
-                    email: {
-                        label: 'E-mail',
-                        placeholder: 'Insert your e-mail address',
-                    },
-                    action: 'Reset password',
-                }
+            switch: {
+                appBar: 'Connected accounts',
             },
             suggestions: {
                 title: 'Suggested accounts',
             },
             action: {
                 or: 'or',
+                login: 'Login',
                 lostPassword: 'Lost password?',
                 addAccount: 'Add account',
+                switchAccount: 'Switch account',
                 logout: 'Logout',
             }
         },
@@ -145,6 +144,7 @@ export default defineI18nLocale(async locale => {
                 unfollowProfile: 'Unfollow',
                 editProfile: 'Edit profile',
                 shareProfile: 'Share profile',
+                changeBanner: 'Change banner',
             },
             collection: {
                 default: {
@@ -176,7 +176,9 @@ export default defineI18nLocale(async locale => {
                 bottomSheet: {
                     title: 'Comments'
                 },
-                showReplies: 'View all {count} replies',
+                list: {
+                    empty: "Be the first to comment"
+                },
                 form: {
                     textField: {
                         placeholder: 'Add a comment...'
@@ -185,13 +187,17 @@ export default defineI18nLocale(async locale => {
                 delete: {
                     label: 'Delete',
                     confirm: 'Are you sure to delete this reply?'
+                },
+                common: {
+                    showReplies: 'View all {count} replies',
+                },
+                action: {
+                    reply: 'Reply',
+                    backToComments: 'Back to comments'
                 }
             },
-            replies: {
-                empty: "It's empty here"
-            },
             likes: {
-                noOne: 'Be the first to like',
+                beTheFirst: 'Be the first to like',
                 person: '<span class="gsky-thread-likes-count">1 person</span> likes this',
                 personWithHighlight: 'Liked by {names}',
                 people: '<span class="gsky-thread-likes-count">{count} people</span> like this',
@@ -218,9 +224,11 @@ export default defineI18nLocale(async locale => {
             appBar: 'Settings',
             navigation: {
                 account: 'Account',
+                profile: 'Profile',
                 appearance: 'Appearance',
                 privacy: 'Privacy',
                 security: 'Security',
+                management: 'Management',
                 language: 'Language',
                 grid: 'Profile Grids',
                 badges: 'Stand out',
@@ -241,28 +249,49 @@ export default defineI18nLocale(async locale => {
             },
             account: {
                 appBar: 'Account',
+                resetPassword: {
+                    form: {
+                        email: {
+                            label: 'E-mail',
+                            placeholder: 'Insert your e-mail address',
+                        },
+                        action: 'Reset password',
+                    }
+                },
+                changePassword: {
+                    action: {
+                        changePassword: 'Change password',
+                    }
+                },
+                factoryAuth: {
+                    title: 'Two-factor authentication (2FA)',
+                    description: 'Require an email code to log in to your account.',
+                    action: {
+                        enable2FA: 'Enable Email 2FA',
+                    }
+                },
+                exportData: {
+                    title: 'Export my data',
+                    description: 'Your account repository, containing all public data records. This file does not include media embeds or your private data, which must be fetched separately.',
+                    action: {
+                        exportMyData: 'Export my data',
+                    }
+                },
+                deleteAccount: {
+                    title: 'Account removal',
+                    description: 'Disabling your account means your profile, posts, feeds, and lists will no longer be visible to other Bluesky users. You can reactivate your account by logging in.',
+                    action: {
+                        disableAccount: 'Disable account',
+                        deleteAccount: 'Delete account',
+                    }
+                },
+                wip: {
+                    title: "More settings on the way",
+                    description: "All the settings are accessible from Bluesky. We are currently focusing on enhancing the features of Gridsky to provide a better user experience."
+                }
             },
             profile: {
                 appBar: 'Profile',
-                fields: {
-                    avatar: {
-                        title: "Avatar",
-                        action: {
-                            change: 'Change avatar',
-                            remove: 'Remove avatar',
-                        }
-                    },
-                    banner: {
-                        title: "Banner",
-                        action: {
-                            change: 'Change banner',
-                            remove: 'Remove banner',
-                        }
-                    },
-                }
-            },
-            appearance: {
-                appBar: 'Appearance',
                 fields: {
                     handle: {
                         label: "Username",
@@ -279,6 +308,28 @@ export default defineI18nLocale(async locale => {
                         placeholder: "Bio",
                         description: "Your bio is visible to everyone on and off Gridsky"
                     },
+                    avatar: {
+                        title: "Avatar",
+                        action: {
+                            change: 'Change avatar',
+                            remove: 'Remove avatar',
+                        }
+                    },
+                    banner: {
+                        title: "Banner",
+                        action: {
+                            change: 'Change banner',
+                            remove: 'Remove banner',
+                        }
+                    },
+                },
+            },
+            appearance: {
+                appBar: 'Appearance',
+                category: {
+                    animation: 'Animation',
+                },
+                fields: {
                     themeName: {
                         label: "Theme",
                         placeholder: "theme",
@@ -291,16 +342,24 @@ export default defineI18nLocale(async locale => {
                         label: "Primary color",
                         placeholder: "#0095f6",
                     },
+                    animation: 'Animation',
                     animationEnabled: {
-                        title: "Cubes animation",
+                        title: "Animated cubes",
+                    },
+                    animationSpeed: {
+                        title: "Animated speed",
                     },
                     animationShowBannerInstead: {
-                        title: "Show banner instead",
+                        title: "Show banner",
                     },
                     animationColors: {
                         label: "Grid configurator",
                     },
                 },
+                unlock: {
+                    title: "Your profile, your style",
+                    description: "Get inspired while supporting Gridsky, and unlock aesthetics for your profile"
+                }
             },
             language: {
                 appBar: 'Language',
@@ -309,6 +368,10 @@ export default defineI18nLocale(async locale => {
                         label: "Language",
                     },
                 },
+                contribute: {
+                    line1: "We're aiming to support as many languages as possible, but only a few are available for now.",
+                    line2: "Would you like to help? We can offer two months of Gridsky {ae} for free if you offer to translate Gridsky in your language. More info on Discord",
+                }
             },
             grid: {
                 appBar: 'Profile Grids',
@@ -316,6 +379,11 @@ export default defineI18nLocale(async locale => {
                     icons: {
                         showAll: ''
                     }
+                },
+                category: {
+                    filter: "Filter",
+                    layout: 'Layout',
+                    media: 'Media',
                 },
                 fields: {
                     name: {
@@ -326,12 +394,19 @@ export default defineI18nLocale(async locale => {
                         label: "Grid icon",
                         placeholder: "lucide:grid",
                     },
-                    filter: {
+                    filterInclude: {
                         label: "Filter by hashtags",
+                        placeholder: "#hashtag",
+                    },
+                    filterExclude: {
+                        label: "Exclude by hashtags",
                         placeholder: "#hashtag",
                     },
                     layout: {
                         label: "Grid layout",
+                    },
+                    videoOnly: {
+                        label: "Video optimized",
                     },
                 },
             },

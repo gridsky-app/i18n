@@ -9,14 +9,17 @@ export default defineI18nLocale(async locale => {
                 reset: 'Reimposta',
                 close: 'Chiudi',
                 create: 'Crea',
+                share: 'Condividi',
                 submit: 'Invia',
                 post: 'Pubblica',
-                done: 'Fatto',
+                done: 'Conferma',
+                saveChanges: 'Conferma',
                 cancel: 'Annulla',
             },
             list: {
-                nothingToShow: "Non c'è nulla qui",
-            }
+                empty: "Non c'è nulla qui",
+            },
+            soon: 'Presto'
         },
         navigation: {
             home: 'Home',
@@ -72,6 +75,31 @@ export default defineI18nLocale(async locale => {
                 name: 'Posts'
             }
         },
+        feed: {
+            list: {
+                title: 'Feed',
+                appBar: 'Feed',
+            },
+            static: {
+                following: {
+                    title: 'Seguiti',
+                    description: 'Feed personale',
+                },
+            },
+            createdBy: `Feed di {handle}`,
+            categories: {
+                manager: {
+                    title: 'Categorie feed',
+                },
+            },
+            suggestions: {
+                title: 'Feed suggeriti',
+            },
+            like: {
+                person: 'Piace a 1 persona',
+                people: 'Piace a {count} persone'
+            },
+        },
         account: {
             login: {
                 form: {
@@ -90,22 +118,18 @@ export default defineI18nLocale(async locale => {
                     action: 'Accedi',
                 }
             },
-            resetPassword: {
-                form: {
-                    email: {
-                        label: 'E-mail',
-                        placeholder: 'Inserisci il tuo indirizzo email',
-                    },
-                    action: 'Reimposta password',
-                }
+            switch: {
+                appBar: 'Account collegati',
             },
             suggestions: {
                 title: 'Account suggeriti',
             },
             action: {
                 or: 'o',
+                login: 'Accedi',
                 lostPassword: 'Password dimenticata?',
                 addAccount: 'Aggiungi account',
+                switchAccount: 'Cambia account',
                 logout: 'Esci',
             }
         },
@@ -151,7 +175,9 @@ export default defineI18nLocale(async locale => {
                 bottomSheet: {
                     title: 'Commenti'
                 },
-                showReplies: 'Visualizza tutti i {count} commenti',
+                list: {
+                    empty: "Commenta per primo"
+                },
                 form: {
                     textField: {
                         placeholder: 'Aggiungi un commento...'
@@ -160,13 +186,17 @@ export default defineI18nLocale(async locale => {
                 delete: {
                     label: 'Elimina',
                     confirm: 'Sei sicuro di voler eliminare questa risposta?'
-                }
-            },
-            replies: {
-                empty: "Qui è tutto vuoto"
+                },
+                common: {
+                    showReplies: 'Visualizza tutti i {count} commenti',
+                },
+                action: {
+                    reply: 'Rispondi',
+                    backToComments: 'Torna ai commenti'
+                },
             },
             likes: {
-                noOne: 'Sii il primo a mettere mi piace',
+                beTheFirst: 'Sii il primo a mettere mi piace',
                 person: '<span class="gsky-thread-likes-count">1 persona</span> ha messo mi piace',
                 personWithHighlight: 'Piace a {names}',
                 people: '<span class="gsky-thread-likes-count">{count} persone</span> hanno messo mi piace',
@@ -193,13 +223,15 @@ export default defineI18nLocale(async locale => {
             appBar: 'Impostazioni',
             navigation: {
                 account: 'Account',
+                profile: 'Profilo',
                 appearance: 'Aspetto',
                 privacy: 'Privacy',
                 security: 'Sicurezza',
+                management: 'Gestione',
                 language: 'Lingua',
-                grid: 'Griglie profilo',
+                grid: 'Griglie',
                 badges: 'Distinguiti',
-                development: 'Sviluppo',
+                development: 'Development',
                 support: 'Supporto',
                 about: 'Informazioni',
                 help: 'Aiuto',
@@ -216,10 +248,65 @@ export default defineI18nLocale(async locale => {
             },
             account: {
                 appBar: 'Account',
+                resetPassword: {
+                    form: {
+                        email: {
+                            label: 'E-mail',
+                            placeholder: 'Inserisci il tuo indirizzo email',
+                        },
+                        action: 'Reimposta password',
+                    }
+                },
+                changePassword: {
+                    "action": {
+                        "changePassword": "Cambia password"
+                    }
+                },
+                factoryAuth: {
+                    "title": "Autenticazione a due fattori (2FA)",
+                    "description": "Richiedi un codice email per accedere al tuo account.",
+                    "action": {
+                        "enable2FA": "Abilita Email 2FA"
+                    }
+                },
+                exportData: {
+                    "title": "Esporta i miei dati",
+                    "description": "L'archivio del tuo account, contenente tutti i dati pubblici. Questo file non include media incorporati o dati privati, che devono essere recuperati separatamente.",
+                    "action": {
+                        "exportMyData": "Esporta i miei dati"
+                    }
+                },
+                deleteAccount: {
+                    "title": "Eliminazione account",
+                    "description": "Disabilitare il tuo account significa che il tuo profilo, i post, i feed e le liste non saranno più visibili agli altri utenti di Bluesky. Puoi riattivare il tuo account effettuando nuovamente l'accesso.",
+                    "action": {
+                        "disableAccount": "Disabilita account",
+                        "deleteAccount": "Elimina account"
+                    }
+                },
+                wip: {
+                    title: "Altre impostazioni in arrivo",
+                    description: "Al momento ci stiamo concentrando sul miglioramento delle funzionalità di Gridsky per offrire un'esperienza utente migliore. Trovi altre impostazioni su Bluesky."
+                }
             },
             profile: {
                 appBar: 'Profilo',
                 fields: {
+                    handle: {
+                        label: "Nome utente",
+                        placeholder: "nomeutente",
+                        description: "Aiuta le persone a trovare il tuo account utilizzando il nome con cui sei conosciuto: il tuo nome completo, un soprannome o il nome della tua attività.",
+                    },
+                    displayName: {
+                        label: "Nome",
+                        placeholder: "Nome",
+                        description: "Aiuta le persone a trovare il tuo account utilizzando il nome con cui sei conosciuto: il tuo nome completo, un soprannome o il nome della tua attività.",
+                    },
+                    description: {
+                        label: "Bio",
+                        placeholder: "Bio",
+                        description: "La tua bio è visibile a tutti su Gridsky e fuori da esso."
+                    },
                     avatar: {
                         title: "Avatar",
                         action: {
@@ -238,22 +325,10 @@ export default defineI18nLocale(async locale => {
             },
             appearance: {
                 appBar: 'Aspetto',
+                category: {
+                    animation: 'Animazione',
+                },
                 fields: {
-                    handle: {
-                        label: "Nome utente",
-                        placeholder: "nomeutente",
-                        description: "Aiuta le persone a trovare il tuo account utilizzando il nome con cui sei conosciuto: il tuo nome completo, un soprannome o il nome della tua attività.",
-                    },
-                    displayName: {
-                        label: "Nome",
-                        placeholder: "Nome",
-                        description: "Aiuta le persone a trovare il tuo account utilizzando il nome con cui sei conosciuto: il tuo nome completo, un soprannome o il nome della tua attività.",
-                    },
-                    description: {
-                        label: "Bio",
-                        placeholder: "Bio",
-                        description: "La tua bio è visibile a tutti su Gridsky e fuori da esso."
-                    },
                     themeName: {
                         label: "Tema",
                         placeholder: "tema",
@@ -266,16 +341,24 @@ export default defineI18nLocale(async locale => {
                         label: "Colore primario",
                         placeholder: "#0095f6",
                     },
+                    animation: 'Animazione',
                     animationEnabled: {
-                        title: "Animazione cubi",
+                        title: "Cubi animati",
+                    },
+                    animationSpeed: {
+                        title: "Velocità",
                     },
                     animationShowBannerInstead: {
-                        title: "Mostra banner al posto",
+                        title: "Mostra banner",
                     },
                     animationColors: {
                         label: "Configuratore griglia",
                     },
                 },
+                unlock: {
+                    title: "Il tuo profilo, il tuo stile",
+                    description: "Lasciati ispirare mentre supporti Gridsky e sblocca l'estetica per il tuo profilo"
+                }
             },
             language: {
                 appBar: 'Lingua',
@@ -284,6 +367,10 @@ export default defineI18nLocale(async locale => {
                         label: "Lingua",
                     },
                 },
+                contribute: {
+                    line1: "Vogliamo supportare il maggior numero di lingue, ma al momento ne sono disponibili solo alcune.",
+                    line2: "Ti piacerebbe aiutarci? Possiamo offrirti mesi gratis di Gridsky {ae} se ci aiuti con le traduzioni nella tua lingua. Maggiori informazioni su Discord",
+                }
             },
             grid: {
                 appBar: 'Griglie profilo',
@@ -291,6 +378,11 @@ export default defineI18nLocale(async locale => {
                     icons: {
                         showAll: ''
                     }
+                },
+                category: {
+                    filter: 'Filtri',
+                    layout: 'Layout',
+                    media: 'Media',
                 },
                 fields: {
                     name: {
@@ -301,12 +393,19 @@ export default defineI18nLocale(async locale => {
                         label: "Icona griglia",
                         placeholder: "lucide:grid",
                     },
-                    filter: {
+                    filterInclude: {
                         label: "Filtra per hashtag",
+                        placeholder: "#hashtag",
+                    },
+                    filterExclude: {
+                        label: "Escludi per hashtags",
                         placeholder: "#hashtag",
                     },
                     layout: {
                         label: "Layout griglia",
+                    },
+                    videoOnly: {
+                        label: "Ottimizzato per video",
                     },
                 },
             },
