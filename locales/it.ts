@@ -1,6 +1,5 @@
 export default defineI18nLocale(async locale => {
     return {
-        name: 'Gridsky',
         common: {
             action: {
                 createProfile: 'Crea profilo',
@@ -38,7 +37,14 @@ export default defineI18nLocale(async locale => {
         },
         search: {
             title: 'Cerca',
+            placeholder: 'Cerca',
             trendingTopics: {
+                title: 'Tendenze'
+            },
+            suggestedTopics: {
+                title: 'Suggeriti'
+            },
+            topicsTopics: {
                 title: 'Tendenze'
             },
             categories: {
@@ -76,6 +82,14 @@ export default defineI18nLocale(async locale => {
             }
         },
         feed: {
+            header: {
+                menu: {
+                    explore: 'Esplora feed',
+                    changeLayout: 'Cambia layout',
+                    reorderFeeds: 'Riordina feed',
+                    shareFeed: 'Condividi feed',
+                }
+            },
             list: {
                 title: 'Feed',
                 appBar: 'Feed',
