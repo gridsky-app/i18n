@@ -47,6 +47,7 @@ export default defineI18nLocale(async locale => {
             categories: {
                 manager: {
                     title: 'Saved searches',
+                    empty: 'There are no saved feeds',
                 },
             },
         },
@@ -101,6 +102,7 @@ export default defineI18nLocale(async locale => {
             categories: {
                 manager: {
                     title: 'Feed categories',
+                    empty: 'There are no saved feeds',
                 },
             },
             suggestions: {
@@ -125,6 +127,9 @@ export default defineI18nLocale(async locale => {
                     authFactorToken: {
                         label: 'Confirm 2FA',
                         placeholder: 'Confirmation code',
+                    },
+                    resolver: {
+                        prompt: 'Use a different handle resolver:'
                     },
                     action: 'Login',
                 }
@@ -204,17 +209,38 @@ export default defineI18nLocale(async locale => {
                 },
                 action: {
                     reply: 'Reply',
+                    replyTo: 'Replying to',
                     backToComments: 'Back to comments'
                 }
             },
             likes: {
+                person: 'person',
+                people: 'people',
                 beTheFirst: 'Be the first to like',
-                person: '<span class="gsky-thread-likes-count">1 person</span> likes this',
-                personWithHighlight: 'Liked by {names}',
-                people: '<span class="gsky-thread-likes-count">{count} people</span> like this',
-                peopleWithHighlight: 'Liked by {names} and <span class="gsky-thread-likes-count">{count} people</span>',
-                personShort: '1 like',
-                peopleShort: '{count} likes',
+                personLikesThis: {
+                    beforeCount: '',
+                    afterCount: 'likes this'
+                },
+                peopleLikeThis: {
+                    beforeCount: '',
+                    afterCount: 'like this'
+                },
+                personWithHighlight: {
+                    beforeCount: 'Liked by {names}',
+                    afterCount: '',
+                },
+                peopleWithHighlight: {
+                    beforeCount: 'Liked by {names} and',
+                    afterCount: '',
+                },
+                personShort: {
+                    beforeCount: '',
+                    afterCount: 'like',
+                },
+                peopleShort: {
+                    beforeCount: '',
+                    afterCount: 'likes',
+                },
                 bottomSheet: {
                     title: 'Likes'
                 },

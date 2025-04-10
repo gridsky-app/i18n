@@ -208,15 +208,35 @@ export default defineI18nLocale(async locale => {
                 }
             },
             likes: {
-                beTheFirst: 'Sei der erste zum liken', // idk
-                person: '<span class="gsky-thread-likes-count">Einer person</span> gefällt das',
-                personWithHighlight: 'Gefällt {names}',
-                people: '<span class="gsky-thread-likes-count">{count} personen</span> gefällt das',
-                peopleWithHighlight: 'Gefällt {names} und <span class="gsky-thread-likes-count">{count} anderen</span>',
-                personShort: '1 like',
-                peopleShort: '{count} likes',
+                person: 'Person',
+                people: 'Personen',
+                beTheFirst: 'Sei der erste zum liken',
+                personLikesThis: {
+                    beforeCount: '',
+                    afterCount: 'gefällt das'
+                },
+                peopleLikeThis: {
+                    beforeCount: '',
+                    afterCount: 'gefällt das'
+                },
+                personWithHighlight: {
+                    beforeCount: 'Gefällt {names}',
+                    afterCount: '',
+                },
+                peopleWithHighlight: {
+                    beforeCount: 'Gefällt {names} und',
+                    afterCount: '',
+                },
+                personShort: {
+                    beforeCount: '',
+                    afterCount: 'Gefällt',
+                },
+                peopleShort: {
+                    beforeCount: '',
+                    afterCount: 'Gefällt',
+                },
                 bottomSheet: {
-                    title: 'Likes'
+                    title: 'Gefällt'
                 },
             },
         },
