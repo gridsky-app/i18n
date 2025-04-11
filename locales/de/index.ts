@@ -21,7 +21,7 @@ export default defineI18nLocale(async locale => {
       soon: "Bald"
     },
     navigation: {
-      home: 'Home',
+      home: "Zuhause",
       search: "Suche",
       explore: "Entdecken",
       support: "Hilfe",
@@ -33,7 +33,7 @@ export default defineI18nLocale(async locale => {
       other: "Andere"
     },
     following: {
-      title: 'Timeline'
+      title: "Zeitleiste"
     },
     search: {
       title: "Suche",
@@ -47,7 +47,7 @@ export default defineI18nLocale(async locale => {
       categories: {
         manager: {
           title: "Gespeicherte suchen",
-          empty: 'There are no saved feeds'
+          empty: "Es gibt keine gespeicherten Feeds"
         }
       }
     },
@@ -66,8 +66,8 @@ export default defineI18nLocale(async locale => {
         appBar: "Neueste"
       },
       following: {
-        title: 'Following',
-        appBar: 'Following'
+        title: "Folgt",
+        appBar: "Folgt"
       },
       search: {
         title: "Suche",
@@ -76,7 +76,7 @@ export default defineI18nLocale(async locale => {
     },
     timeline: {
       list: {
-        name: 'Posts'
+        name: "Beiträge"
       }
     },
     feed: {
@@ -94,7 +94,7 @@ export default defineI18nLocale(async locale => {
       },
       static: {
         following: {
-          title: 'Following',
+          title: "Folgt",
           description: "Persönlicher Feed"
         }
       },
@@ -102,7 +102,7 @@ export default defineI18nLocale(async locale => {
       categories: {
         manager: {
           title: "Feed Kategorien",
-          empty: 'There are no saved feeds'
+          empty: "Es gibt keine gespeicherten Feeds"
         }
       },
       suggestions: {
@@ -129,9 +129,9 @@ export default defineI18nLocale(async locale => {
             placeholder: "Bestätigungscode"
           },
           resolver: {
-            prompt: 'Use a different handle resolver:'
+            prompt: "Verwenden Sie einen anderen Handle Resolver:"
           },
-          action: 'Login'
+          action: "Anmelden"
         }
       },
       switch: {
@@ -151,9 +151,9 @@ export default defineI18nLocale(async locale => {
     },
     profile: {
       stats: {
-        posts: 'Posts',
-        followers: 'Followers',
-        follows: 'Following'
+        posts: "Beiträge",
+        followers: "Follower",
+        follows: "Folgt"
       },
       action: {
         followProfile: "Folgen",
@@ -164,7 +164,7 @@ export default defineI18nLocale(async locale => {
       },
       collection: {
         default: {
-          label: 'Posts'
+          label: "Beiträge"
         }
       },
       media: {
@@ -176,7 +176,7 @@ export default defineI18nLocale(async locale => {
         menu: {
           addCover: "Cover hinzufügen",
           addToAlbum: "Medien hinzufügen",
-          cloneToReel: "Clone to reel",
+          cloneToReel: "Klon zum Rollen",
           convertToAlbum: "Zu Album umwandeln",
           convertToIframe: "Zu Iframe umwandeln",
           remove: "Entfernen",
@@ -209,7 +209,7 @@ export default defineI18nLocale(async locale => {
         },
         action: {
           reply: "Antworten",
-          replyTo: 'Replying to',
+          replyTo: "Antworten auf",
           backToComments: "Zurück zu den Kommentaren"
         }
       },
@@ -260,7 +260,7 @@ export default defineI18nLocale(async locale => {
     settings: {
       appBar: "Einstellungen",
       navigation: {
-        account: 'Account',
+        account: "Konto",
         profile: "Profil",
         appearance: "Erscheinung",
         privacy: "Privatsphäre",
@@ -285,11 +285,11 @@ export default defineI18nLocale(async locale => {
         }
       },
       account: {
-        appBar: 'Account',
+        appBar: "Konto",
         resetPassword: {
           form: {
             email: {
-              label: 'E-mail',
+              label: "E-Mail",
               placeholder: "Geben deine E-Mail Addresse ein"
             },
             action: "Passwort zurücksetzen"
@@ -368,8 +368,8 @@ export default defineI18nLocale(async locale => {
         },
         fields: {
           themeName: {
-            label: "Theme",
-            placeholder: "theme"
+            label: "Thema",
+            placeholder: "thema"
           },
           themeVariant: {
             label: "Variante",
@@ -418,7 +418,7 @@ export default defineI18nLocale(async locale => {
           }
         },
         category: {
-          filter: "Filter",
+          filter: "Filtern",
           layout: 'Layout',
           media: "Medien"
         },
@@ -429,7 +429,7 @@ export default defineI18nLocale(async locale => {
           },
           icon: {
             label: "Raster icon",
-            placeholder: "lucide:grid"
+            placeholder: "luzide:grid"
           },
           filterInclude: {
             label: "Nach Hashtags filtern",
