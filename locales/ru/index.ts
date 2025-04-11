@@ -2,115 +2,115 @@ export default defineI18nLocale(async locale => {
   return {
     common: {
       action: {
-        createProfile: 'Create profile',
-        change: 'Change',
-        remove: 'Remove',
+        createProfile: "Создать профиль",
+        change: "Изменить",
+        remove: "Удалить",
         reset: 'Reset',
-        close: 'Close',
-        create: 'Create',
-        share: 'Share',
-        submit: 'Submit',
-        saveChanges: 'Save changes',
-        post: 'Post',
-        done: 'Done',
-        cancel: 'Cancel'
+        close: "Закрыть",
+        create: "Создать",
+        share: "Поделиться",
+        submit: "Отправить",
+        saveChanges: "Сохранить изменения",
+        post: "Пост",
+        done: "Готово",
+        cancel: "Отмена"
       },
       list: {
-        empty: "It's empty here"
+        empty: "Здесь пусто"
       },
-      soon: 'Soon'
+      soon: "Скоро"
     },
     navigation: {
-      home: 'Home',
-      search: 'Search',
-      explore: 'Explore',
-      support: 'Support',
-      notifications: 'Notifications',
-      messages: 'Messages',
-      profile: 'Profile',
-      settings: 'Settings',
-      create: 'Create',
-      other: 'Other'
+      home: "Домашний",
+      search: "Искать",
+      explore: "Исследовать",
+      support: "Поддержка",
+      notifications: "Уведомления",
+      messages: "Сообщения",
+      profile: "Профиль",
+      settings: "Настройки",
+      create: "Создать",
+      other: "Прочие вопросы"
     },
     following: {
-      title: 'Timeline'
+      title: "Хронология"
     },
     search: {
-      title: 'Search',
-      placeholder: 'Search',
+      title: "Искать",
+      placeholder: "Искать",
       suggestedTopics: {
-        title: 'Suggested'
+        title: "Рекомендуется"
       },
       trendingTopics: {
-        title: 'Trending'
+        title: "Популярные"
       },
       categories: {
         manager: {
-          title: 'Saved searches',
-          empty: 'There are no saved feeds'
+          title: "Сохраненные поиски",
+          empty: "Нет сохраненных каналов"
         }
       }
     },
     explore: {
-      title: 'Explore',
+      title: "Исследовать",
       forYou: {
-        title: 'Discover',
-        appBar: 'For you'
+        title: "Узнайте",
+        appBar: "Для вас"
       },
       discover: {
-        title: 'Discover',
-        appBar: 'Discover'
+        title: "Узнайте",
+        appBar: "Узнайте"
       },
       latest: {
-        title: 'Latest',
-        appBar: 'Latest'
+        title: "Последние",
+        appBar: "Последние"
       },
       following: {
-        title: 'Following',
-        appBar: 'Following'
+        title: "Подписка",
+        appBar: "Подписка"
       },
       search: {
-        title: 'Search',
-        appBar: 'Search'
+        title: "Искать",
+        appBar: "Искать"
       }
     },
     timeline: {
       list: {
-        name: 'Posts'
+        name: "Должности"
       }
     },
     feed: {
       header: {
         menu: {
-          explore: 'Explore feeds',
-          changeLayout: 'Change layout',
-          reorderFeeds: 'Reorder feeds',
-          shareFeed: 'Share feed'
+          explore: "Исследовать каналы",
+          changeLayout: "Изменить макет",
+          reorderFeeds: "Заказать ленту новостей",
+          shareFeed: "Поделиться лентой"
         }
       },
       list: {
-        title: 'Feeds',
-        appBar: 'Feeds'
+        title: "Ленты",
+        appBar: "Ленты"
       },
       static: {
         following: {
-          title: 'Following',
-          description: 'Personal feed'
+          title: "Подписка",
+          description: "Личный канал"
         }
       },
-      createdBy: `Feed by {handle}`,
+      createdBy: `Лента от {handle}`,
       categories: {
         manager: {
-          title: 'Feed categories',
-          empty: 'There are no saved feeds'
+          title: "Категории ленты",
+          empty: "Нет сохраненных каналов"
         }
       },
       suggestions: {
-        title: 'Suggested feeds'
+        title: "Предлагаемые каналы"
       },
       like: {
-        person: 'Liked by 1',
-        people: 'Liked by {count}'
+        person: "Понравилось 1",
+        people: "Понравилось {count}"
       }
     },
     account: {
@@ -118,367 +118,367 @@ export default defineI18nLocale(async locale => {
         form: {
           identifier: {
             label: 'Identifier',
-            placeholder: 'Username or e-mail address'
+            placeholder: "Имя пользователя или адрес электронной почты"
           },
           password: {
-            label: 'Password',
+            label: "Пароль",
             placeholder: ''
           },
           authFactorToken: {
-            label: 'Confirm 2FA',
-            placeholder: 'Confirmation code'
+            label: "Подтвердить 2FA",
+            placeholder: "Код подтверждения"
           },
           resolver: {
-            prompt: 'Use a different handle resolver:'
+            prompt: "Использовать другой резолтор дескриптора:"
           },
-          action: 'Login'
+          action: "Логин"
         }
       },
       switch: {
-        appBar: 'Connected accounts'
+        appBar: "Подключенные учетные записи"
       },
       suggestions: {
-        title: 'Suggested accounts'
+        title: "Рекомендуемые учетные записи"
       },
       action: {
-        or: 'or',
-        login: 'Login',
-        lostPassword: 'Lost password?',
-        addAccount: 'Add account',
-        switchAccount: 'Switch account',
-        logout: 'Logout'
+        or: "или",
+        login: "Логин",
+        lostPassword: "Забыли пароль?",
+        addAccount: "Добавить аккаунт",
+        switchAccount: "Сменить аккаунт",
+        logout: "Выйти"
       }
     },
     profile: {
       stats: {
-        posts: 'Posts',
-        followers: 'Followers',
-        follows: 'Following'
+        posts: "Должности",
+        followers: "Подписчики",
+        follows: "Подписка"
       },
       action: {
-        followProfile: 'Follow',
-        unfollowProfile: 'Unfollow',
-        editProfile: 'Edit profile',
-        shareProfile: 'Share profile',
-        changeBanner: 'Change banner'
+        followProfile: "Подписаться",
+        unfollowProfile: "Отписаться",
+        editProfile: "Изменить профиль",
+        shareProfile: "Поделиться профилем",
+        changeBanner: "Сменить баннер"
       },
       collection: {
         default: {
-          label: 'Posts'
+          label: "Должности"
         }
       },
       media: {
         add: {
-          title: "Create new post",
-          subtitle: "Drag photos and videos here",
-          action: "Select files"
+          title: "Создать новый пост",
+          subtitle: "Перетащите фото и видео здесь",
+          action: "Выберите файлы"
         },
         menu: {
-          addCover: "Add cover",
-          addToAlbum: "Add media",
-          cloneToReel: "Clone to reel",
-          convertToAlbum: "Convert to album",
-          convertToIframe: "Convert to iframe",
-          remove: "Remove",
-          removeCover: "Remove cover",
-          removeFromAlbum: "Remove media",
-          replaceCover: "Replace cover",
-          replaceMedia: "Replace media"
+          addCover: "Добавить обложку",
+          addToAlbum: "Добавить медиа",
+          cloneToReel: "Клонировать для катушки",
+          convertToAlbum: "Преобразовать в альбом",
+          convertToIframe: "Преобразовать в iframe",
+          remove: "Удалить",
+          removeCover: "Удалить обложку",
+          removeFromAlbum: "Удалить медиа",
+          replaceCover: "Заменить крышку",
+          replaceMedia: "Заменить медиа"
         }
       }
     },
     thread: {
       reply: {
         bottomSheet: {
-          title: 'Comments'
+          title: "Комментарии"
         },
         list: {
-          empty: "Be the first to comment"
+          empty: "Будьте первым, кто прокомментирует"
         },
         form: {
           textField: {
-            placeholder: 'Add a comment...'
+            placeholder: "Добавить комментарий..."
           }
         },
         delete: {
-          label: 'Delete',
-          confirm: 'Are you sure to delete this reply?'
+          label: "Удалить",
+          confirm: "Вы уверены, что хотите удалить этот ответ?"
         },
         common: {
-          showReplies: 'View all {count} replies'
+          showReplies: "Просмотреть все ответы {count}"
         },
         action: {
-          reply: 'Reply',
-          replyTo: 'Replying to',
-          backToComments: 'Back to comments'
+          reply: "Ответ",
+          replyTo: "Ответ на",
+          backToComments: "Вернуться к комментариям"
         }
       },
       likes: {
-        person: 'person',
-        people: 'people',
-        beTheFirst: 'Be the first to like',
+        person: "человек",
+        people: "люди",
+        beTheFirst: "Будьте первым, кто любит",
         personLikesThis: {
           beforeCount: '',
-          afterCount: 'likes this'
+          afterCount: "нравится это"
         },
         peopleLikeThis: {
           beforeCount: '',
-          afterCount: 'like this'
+          afterCount: "нравится это"
         },
         personWithHighlight: {
-          beforeCount: 'Liked by {names}',
+          beforeCount: "Понравилось {names}",
           afterCount: ''
         },
         peopleWithHighlight: {
-          beforeCount: 'Liked by {names} and',
+          beforeCount: "Понравилось {names} и",
           afterCount: ''
         },
         personShort: {
           beforeCount: '',
-          afterCount: 'like'
+          afterCount: "лайк"
         },
         peopleShort: {
           beforeCount: '',
-          afterCount: 'likes'
+          afterCount: "лайки"
         },
         bottomSheet: {
-          title: 'Likes'
+          title: "Лайки"
         }
       }
     },
     notifications: {
-      title: 'Notifications',
-      appBar: 'Notifications',
-      like: "liked your post",
-      repost: "reposted your post",
-      follow: "followed you",
-      mention: "mentioned you",
-      reply: "replied to your post",
-      default: "interacted with your post",
-      unknownUser: "Someone"
+      title: "Уведомления",
+      appBar: "Уведомления",
+      like: "понравилось ваше сообщение",
+      repost: "отредактировал ваше сообщение",
+      follow: "подписался на вас",
+      mention: "упомянул вас",
+      reply: "ответил на ваше сообщение",
+      default: "общался с вашим сообщением",
+      unknownUser: "Кто-то"
     },
     settings: {
-      appBar: 'Settings',
+      appBar: "Настройки",
       navigation: {
-        account: 'Account',
-        profile: 'Profile',
-        appearance: 'Appearance',
-        privacy: 'Privacy',
-        security: 'Security',
-        management: 'Management',
-        language: 'Language',
-        grid: 'Profile Grids',
-        badges: 'Stand out',
-        development: 'Development',
-        support: 'Support',
-        about: 'About',
-        help: 'Help',
-        community: 'Community',
-        whatsnew: 'What\'s new'
+        account: "Аккаунт",
+        profile: "Профиль",
+        appearance: "Внешний вид",
+        privacy: "Приватность",
+        security: "Безопасность",
+        management: "Управление",
+        language: "Язык",
+        grid: "Профиль сетки",
+        badges: "Стоять",
+        development: "Развитие",
+        support: "Поддержка",
+        about: "О программе",
+        help: "Справка",
+        community: "Сообщество",
+        whatsnew: "Что нового"
       },
       main: {
-        appBar: 'Dashboard',
+        appBar: "Панель",
         section: {
           password: {
-            title: 'Password and authentication'
+            title: "Пароль и аутентификация"
           }
         }
       },
       account: {
-        appBar: 'Account',
+        appBar: "Аккаунт",
         resetPassword: {
           form: {
             email: {
-              label: 'E-mail',
-              placeholder: 'Insert your e-mail address'
+              label: "Эл. почта",
+              placeholder: "Введите ваш адрес электронной почты"
             },
-            action: 'Reset password'
+            action: "Сброс пароля"
           }
         },
         changePassword: {
           action: {
-            changePassword: 'Change password'
+            changePassword: "Изменить пароль"
           }
         },
         factoryAuth: {
-          title: 'Two-factor authentication (2FA)',
-          description: 'Require an email code to log in to your account.',
+          title: "Двухфакторная аутентификация (2FA)",
+          description: "Требовать код электронной почты для входа в свою учетную запись.",
           action: {
-            enable2FA: 'Enable Email 2FA'
+            enable2FA: "Включить 2FA эл. почты"
           }
         },
         exportData: {
-          title: 'Export my data',
-          description: 'Your account repository, containing all public data records. This file does not include media embeds or your private data, which must be fetched separately.',
+          title: "Экспорт моих данных",
+          description: "Хранилище учетной записи, содержащее все записи публичных данных. Этот файл не включает в себя мультимедийные вставки или ваши личные данные, которые должны быть загружены отдельно.",
           action: {
-            exportMyData: 'Export my data'
+            exportMyData: "Экспорт моих данных"
           }
         },
         deleteAccount: {
-          title: 'Account removal',
-          description: 'Disabling your account means your profile, posts, feeds, and lists will no longer be visible to other Bluesky users. You can reactivate your account by logging in.',
+          title: "Удаление учетной записи",
+          description: "Отключение вашего аккаунта означает, что ваш профиль, сообщения, ленты новостей и списки больше не будут видны другим пользователям Blueski. Вы можете реактивировать свою учетную запись, войдя в систему.",
           action: {
-            disableAccount: 'Disable account',
-            deleteAccount: 'Delete account'
+            disableAccount: "Отключить аккаунт",
+            deleteAccount: "Удалить аккаунт"
           }
         },
         wip: {
-          title: "More settings on the way",
-          description: "All the settings are accessible from Bluesky. We are currently focusing on enhancing the features of Gridsky to provide a better user experience."
+          title: "Другие настройки на пути",
+          description: "Все настройки доступны из Bluesky. В настоящее время мы фокусируемся на улучшении особенностей Gridsky для лучшего использования."
         }
       },
       profile: {
-        appBar: 'Profile',
+        appBar: "Профиль",
         fields: {
           handle: {
-            label: "Username",
-            placeholder: "username",
-            description: "Help people discover your account by using the name that you're known by: either your full name, nickname or business name"
+            label: "Имя пользователя",
+            placeholder: "имя пользователя",
+            description: "Помогите людям найти вашу учетную запись, используя имя, которое вы знаете: либо ваше полное имя, никнейм, либо корпоративное имя"
           },
           displayName: {
-            label: "Name",
-            placeholder: "Name",
-            description: "Help people discover your account by using the name that you're known by: either your full name, nickname or business name"
+            label: "Наименование",
+            placeholder: "Наименование",
+            description: "Помогите людям найти вашу учетную запись, используя имя, которое вы знаете: либо ваше полное имя, никнейм, либо корпоративное имя"
           },
           description: {
-            label: "Bio",
-            placeholder: "Bio",
-            description: "Your bio is visible to everyone on and off Gridsky"
+            label: "Био",
+            placeholder: "Био",
+            description: "Ваша биография видна всем на и вне Серидского"
           },
           avatar: {
-            title: "Avatar",
+            title: "Аватар",
             action: {
-              change: 'Change avatar',
-              remove: 'Remove avatar'
+              change: "Изменить аватар",
+              remove: "Удалить аватар"
             }
           },
           banner: {
-            title: "Banner",
+            title: "Баннер",
             action: {
-              change: 'Change banner',
-              remove: 'Remove banner'
+              change: "Сменить баннер",
+              remove: "Удалить баннер"
             }
           }
         }
       },
       appearance: {
-        appBar: 'Appearance',
+        appBar: "Внешний вид",
         category: {
-          animation: 'Animation'
+          animation: "Анимация"
         },
         fields: {
           themeName: {
-            label: "Theme",
-            placeholder: "theme"
+            label: "Тема",
+            placeholder: "тема"
           },
           themeVariant: {
-            label: "Variant",
-            placeholder: "variant"
+            label: "Вариант",
+            placeholder: "вариант"
           },
           themeColorPrimary: {
-            label: "Primary color",
+            label: "Основной цвет",
             placeholder: "#0095f6"
           },
-          animation: 'Animation',
+          animation: "Анимация",
           animationEnabled: {
-            title: "Animated cubes"
+            title: "Анимированные кубы"
           },
           animationSpeed: {
-            title: "Animated speed"
+            title: "Анимированная скорость"
           },
           animationShowBannerInstead: {
-            title: "Show banner"
+            title: "Показать баннер"
           },
           animationColors: {
-            label: "Grid configurator"
+            label: "Конфигуратор сетки"
           }
         },
         unlock: {
-          title: "Your profile, your style",
-          description: "Get inspired while supporting Gridsky, and unlock aesthetics for your profile"
+          title: "Ваш профиль, ваш стиль",
+          description: "Воодушевляйтесь поддержкой Сетки и откройте эстетику для вашего профиля"
         }
       },
       language: {
-        appBar: 'Language',
+        appBar: "Язык",
         fields: {
           language: {
-            label: "Language"
+            label: "Язык"
           }
         },
         contribute: {
-          line1: "We're aiming to support as many languages as possible, but only a few are available for now.",
-          line2: "Would you like to help? We can offer two months of Gridsky {ae} for free if you offer to translate Gridsky in your language. More info on Discord"
+          line1: "Мы стремимся поддерживать как можно больше языков, но только некоторые из них уже доступны.",
+          line2: "Вы хотели бы помочь? Мы можем предложить два месяца Gridsky {ae} бесплатно, если вы предложите перевести Gridsky на ваш язык. Больше информации о Discord"
         }
       },
       grid: {
-        appBar: 'Profile Grids',
+        appBar: "Профиль сетки",
         showcase: {
           icons: {
             showAll: ''
           }
         },
         category: {
-          filter: "Filter",
-          layout: 'Layout',
-          media: 'Media'
+          filter: "Фильтр",
+          layout: "Макет",
+          media: "Медиа"
         },
         fields: {
           name: {
-            label: "Grid name",
-            placeholder: "grid name"
+            label: "Название сетки",
+            placeholder: "имя сетки"
           },
           icon: {
-            label: "Grid icon",
+            label: "Значок сетки",
             placeholder: "lucide:grid"
           },
           filterInclude: {
-            label: "Filter by hashtags",
+            label: "Фильтр по хэштегам",
             placeholder: "#hashtag"
           },
           filterExclude: {
-            label: "Exclude by hashtags",
+            label: "Исключить из хэштегов",
             placeholder: "#hashtag"
           },
           layout: {
-            label: "Grid layout"
+            label: "Разметка сетки"
           },
           videoOnly: {
-            label: "Video optimized"
+            label: "Видео оптимизировано"
           }
         }
       },
       menu: {
-        appBar: 'Account & Settings'
+        appBar: "Учетная запись и настройки"
       },
       about: {
-        appBar: 'About'
+        appBar: "О программе"
       }
     },
     timeAgo: {
-      "just-now": "just now",
+      "just-now": "только что",
       "ago": "{0} ago",
-      "in": "in {0}",
-      "last-month": "last month",
-      "next-month": "next month",
-      "month": "month | months",
-      "last-year": "last year",
-      "next-year": "next year",
-      "year": "year | years",
-      "yesterday": "yesterday",
-      "tomorrow": "tomorrow",
-      "day": "day | days",
-      "last-week": "last week",
-      "next-week": "next week",
-      "week": "week | weeks",
-      "hour": "hour | hours",
-      "minute": "minute | minutes",
-      "second": "second | seconds"
+      "in": "в {0}",
+      "last-month": "прошлый месяц",
+      "next-month": "следующий месяц",
+      "month": "месяц | месяцы",
+      "last-year": "прошлый год",
+      "next-year": "следующий год",
+      "year": "год | лет",
+      "yesterday": "вчера",
+      "tomorrow": "завтра",
+      "day": "день | дней",
+      "last-week": "прошлой неделе",
+      "next-week": "следующая неделя",
+      "week": "неделя | недели",
+      "hour": "час | часов",
+      "minute": "минута | минуты",
+      "second": "секунды | секунды"
     },
     $vuetify: {
       badge: '',
       loading: '',
       datePicker: {
-        title: 'Select date'
+        title: "Выберите дату"
       }
     }
   };
