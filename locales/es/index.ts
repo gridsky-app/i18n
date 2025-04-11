@@ -2,115 +2,115 @@ export default defineI18nLocale(async locale => {
   return {
     common: {
       action: {
-        createProfile: 'Create profile',
-        change: 'Change',
-        remove: 'Remove',
+        createProfile: "Crear perfil",
+        change: "Cambiar",
+        remove: "Eliminar",
         reset: 'Reset',
-        close: 'Close',
-        create: 'Create',
-        share: 'Share',
-        submit: 'Submit',
-        saveChanges: 'Save changes',
-        post: 'Post',
-        done: 'Done',
-        cancel: 'Cancel'
+        close: "Cerrar",
+        create: "Crear",
+        share: "Compartir",
+        submit: "Enviar",
+        saveChanges: "Guardar cambios",
+        post: "Publicar",
+        done: "Hecho",
+        cancel: "Cancelar"
       },
       list: {
-        empty: "It's empty here"
+        empty: "Está vacío aquí"
       },
-      soon: 'Soon'
+      soon: "Pronto"
     },
     navigation: {
-      home: 'Home',
-      search: 'Search',
-      explore: 'Explore',
-      support: 'Support',
-      notifications: 'Notifications',
-      messages: 'Messages',
-      profile: 'Profile',
-      settings: 'Settings',
-      create: 'Create',
-      other: 'Other'
+      home: "Inicio",
+      search: "Buscar",
+      explore: "Explorar",
+      support: "Soporte",
+      notifications: "Notificaciones",
+      messages: "Mensajes",
+      profile: "Perfil",
+      settings: "Ajustes",
+      create: "Crear",
+      other: "Otro"
     },
     following: {
-      title: 'Timeline'
+      title: "Línea de tiempo"
     },
     search: {
-      title: 'Search',
-      placeholder: 'Search',
+      title: "Buscar",
+      placeholder: "Buscar",
       suggestedTopics: {
-        title: 'Suggested'
+        title: "Sugerido"
       },
       trendingTopics: {
-        title: 'Trending'
+        title: "Tendencias"
       },
       categories: {
         manager: {
-          title: 'Saved searches',
-          empty: 'There are no saved feeds'
+          title: "Búsqueda guardada",
+          empty: "No hay canales guardados"
         }
       }
     },
     explore: {
-      title: 'Explore',
+      title: "Explorar",
       forYou: {
-        title: 'Discover',
-        appBar: 'For you'
+        title: "Descubre",
+        appBar: "Para ti"
       },
       discover: {
-        title: 'Discover',
-        appBar: 'Discover'
+        title: "Descubre",
+        appBar: "Descubre"
       },
       latest: {
-        title: 'Latest',
-        appBar: 'Latest'
+        title: "Última",
+        appBar: "Última"
       },
       following: {
-        title: 'Following',
-        appBar: 'Following'
+        title: "Siguiendo",
+        appBar: "Siguiendo"
       },
       search: {
-        title: 'Search',
-        appBar: 'Search'
+        title: "Buscar",
+        appBar: "Buscar"
       }
     },
     timeline: {
       list: {
-        name: 'Posts'
+        name: "Mensajes"
       }
     },
     feed: {
       header: {
         menu: {
-          explore: 'Explore feeds',
-          changeLayout: 'Change layout',
-          reorderFeeds: 'Reorder feeds',
-          shareFeed: 'Share feed'
+          explore: "Explorar feeds",
+          changeLayout: "Cambiar diseño",
+          reorderFeeds: "Reordenar fuentes",
+          shareFeed: "Compartir feed"
         }
       },
       list: {
-        title: 'Feeds',
-        appBar: 'Feeds'
+        title: "Alimentos",
+        appBar: "Alimentos"
       },
       static: {
         following: {
-          title: 'Following',
-          description: 'Personal feed'
+          title: "Siguiendo",
+          description: "Fuente personal"
         }
       },
-      createdBy: `Feed by {handle}`,
+      createdBy: `Alimentado por {handle}`,
       categories: {
         manager: {
-          title: 'Feed categories',
-          empty: 'There are no saved feeds'
+          title: "Categorías de la fuente",
+          empty: "No hay canales guardados"
         }
       },
       suggestions: {
-        title: 'Suggested feeds'
+        title: "Feeds sugeridos"
       },
       like: {
-        person: 'Liked by 1',
-        people: 'Liked by {count}'
+        person: "Gusto por 1",
+        people: "Gusto por {count}"
       }
     },
     account: {
@@ -118,367 +118,367 @@ export default defineI18nLocale(async locale => {
         form: {
           identifier: {
             label: 'Identifier',
-            placeholder: 'Username or e-mail address'
+            placeholder: "Nombre de usuario o dirección de e-mail"
           },
           password: {
-            label: 'Password',
+            label: "Contraseña",
             placeholder: ''
           },
           authFactorToken: {
-            label: 'Confirm 2FA',
-            placeholder: 'Confirmation code'
+            label: "Confirmar 2FA",
+            placeholder: "Código de confirmación"
           },
           resolver: {
-            prompt: 'Use a different handle resolver:'
+            prompt: "Usar un resolutor de asa diferente:"
           },
-          action: 'Login'
+          action: "Ingresar"
         }
       },
       switch: {
-        appBar: 'Connected accounts'
+        appBar: "Cuentas conectadas"
       },
       suggestions: {
-        title: 'Suggested accounts'
+        title: "Cuentas sugeridas"
       },
       action: {
-        or: 'or',
-        login: 'Login',
-        lostPassword: 'Lost password?',
-        addAccount: 'Add account',
-        switchAccount: 'Switch account',
-        logout: 'Logout'
+        or: "o",
+        login: "Ingresar",
+        lostPassword: "¿Contraseña perdida?",
+        addAccount: "Añadir cuenta",
+        switchAccount: "Cambiar cuenta",
+        logout: "Cerrar sesión"
       }
     },
     profile: {
       stats: {
-        posts: 'Posts',
-        followers: 'Followers',
-        follows: 'Following'
+        posts: "Mensajes",
+        followers: "Seguidores",
+        follows: "Siguiendo"
       },
       action: {
-        followProfile: 'Follow',
-        unfollowProfile: 'Unfollow',
-        editProfile: 'Edit profile',
-        shareProfile: 'Share profile',
-        changeBanner: 'Change banner'
+        followProfile: "Seguir",
+        unfollowProfile: "Dejar de seguir",
+        editProfile: "Editar perfil",
+        shareProfile: "Compartir perfil",
+        changeBanner: "Cambiar banner"
       },
       collection: {
         default: {
-          label: 'Posts'
+          label: "Mensajes"
         }
       },
       media: {
         add: {
-          title: "Create new post",
-          subtitle: "Drag photos and videos here",
-          action: "Select files"
+          title: "Crear nuevo post",
+          subtitle: "Arrastra fotos y vídeos aquí",
+          action: "Seleccionar archivos"
         },
         menu: {
-          addCover: "Add cover",
-          addToAlbum: "Add media",
-          cloneToReel: "Clone to reel",
-          convertToAlbum: "Convert to album",
-          convertToIframe: "Convert to iframe",
-          remove: "Remove",
-          removeCover: "Remove cover",
-          removeFromAlbum: "Remove media",
-          replaceCover: "Replace cover",
-          replaceMedia: "Replace media"
+          addCover: "Añadir portada",
+          addToAlbum: "Añadir medios",
+          cloneToReel: "Clonar para rodillo",
+          convertToAlbum: "Convertir a álbum",
+          convertToIframe: "Convertir a iframe",
+          remove: "Eliminar",
+          removeCover: "Eliminar portada",
+          removeFromAlbum: "Eliminar medios",
+          replaceCover: "Reemplazar portada",
+          replaceMedia: "Reemplazar medios"
         }
       }
     },
     thread: {
       reply: {
         bottomSheet: {
-          title: 'Comments'
+          title: "Comentarios"
         },
         list: {
-          empty: "Be the first to comment"
+          empty: "Sé el primero en comentar"
         },
         form: {
           textField: {
-            placeholder: 'Add a comment...'
+            placeholder: "Añadir un comentario..."
           }
         },
         delete: {
-          label: 'Delete',
-          confirm: 'Are you sure to delete this reply?'
+          label: "Eliminar",
+          confirm: "¿Estás seguro de eliminar esta respuesta?"
         },
         common: {
           showReplies: 'View all {count} replies'
         },
         action: {
-          reply: 'Reply',
-          replyTo: 'Replying to',
-          backToComments: 'Back to comments'
+          reply: "Responder",
+          replyTo: "Respondiendo a",
+          backToComments: "Volver a los comentarios"
         }
       },
       likes: {
-        person: 'person',
-        people: 'people',
-        beTheFirst: 'Be the first to like',
+        person: "persona",
+        people: "personas",
+        beTheFirst: "Sé el primero en \"Me gusta\"",
         personLikesThis: {
           beforeCount: '',
-          afterCount: 'likes this'
+          afterCount: "le gusta esto"
         },
         peopleLikeThis: {
           beforeCount: '',
-          afterCount: 'like this'
+          afterCount: "les gusta esto"
         },
         personWithHighlight: {
-          beforeCount: 'Liked by {names}',
+          beforeCount: "Gusto por {names}",
           afterCount: ''
         },
         peopleWithHighlight: {
-          beforeCount: 'Liked by {names} and',
+          beforeCount: "Gusto por {names} y",
           afterCount: ''
         },
         personShort: {
           beforeCount: '',
-          afterCount: 'like'
+          afterCount: "me gusta"
         },
         peopleShort: {
           beforeCount: '',
-          afterCount: 'likes'
+          afterCount: "me gusta"
         },
         bottomSheet: {
-          title: 'Likes'
+          title: "Me gusta"
         }
       }
     },
     notifications: {
-      title: 'Notifications',
-      appBar: 'Notifications',
-      like: "liked your post",
-      repost: "reposted your post",
-      follow: "followed you",
-      mention: "mentioned you",
-      reply: "replied to your post",
-      default: "interacted with your post",
-      unknownUser: "Someone"
+      title: "Notificaciones",
+      appBar: "Notificaciones",
+      like: "le gustó tu publicación",
+      repost: "reenvió tu post",
+      follow: "te siguió",
+      mention: "te mencionó",
+      reply: "respondió a su mensaje",
+      default: "interactuó con tu publicación",
+      unknownUser: "Alguien"
     },
     settings: {
-      appBar: 'Settings',
+      appBar: "Ajustes",
       navigation: {
-        account: 'Account',
-        profile: 'Profile',
-        appearance: 'Appearance',
-        privacy: 'Privacy',
-        security: 'Security',
-        management: 'Management',
-        language: 'Language',
-        grid: 'Profile Grids',
-        badges: 'Stand out',
-        development: 'Development',
-        support: 'Support',
-        about: 'About',
-        help: 'Help',
-        community: 'Community',
-        whatsnew: 'What\'s new'
+        account: "Cuenta",
+        profile: "Perfil",
+        appearance: "Apariencia",
+        privacy: "Privacidad",
+        security: "Seguridad",
+        management: "Gestión",
+        language: "Idioma",
+        grid: "Rejillas de perfil",
+        badges: "Salir",
+        development: "Desarrollo",
+        support: "Soporte",
+        about: "Acerca de",
+        help: "Ayuda",
+        community: "Comunidad",
+        whatsnew: "Novedades"
       },
       main: {
-        appBar: 'Dashboard',
+        appBar: "Tablero",
         section: {
           password: {
-            title: 'Password and authentication'
+            title: "Contraseña y autenticación"
           }
         }
       },
       account: {
-        appBar: 'Account',
+        appBar: "Cuenta",
         resetPassword: {
           form: {
             email: {
               label: 'E-mail',
-              placeholder: 'Insert your e-mail address'
+              placeholder: "Introduzca su dirección de correo electrónico"
             },
-            action: 'Reset password'
+            action: "Restablecer contraseña"
           }
         },
         changePassword: {
           action: {
-            changePassword: 'Change password'
+            changePassword: "Cambiar contraseña"
           }
         },
         factoryAuth: {
-          title: 'Two-factor authentication (2FA)',
-          description: 'Require an email code to log in to your account.',
+          title: "Autenticación en dos pasos (2FA)",
+          description: "Requiere un código de correo electrónico para iniciar sesión en su cuenta.",
           action: {
-            enable2FA: 'Enable Email 2FA'
+            enable2FA: "Activar Email 2FA"
           }
         },
         exportData: {
-          title: 'Export my data',
-          description: 'Your account repository, containing all public data records. This file does not include media embeds or your private data, which must be fetched separately.',
+          title: "Exportar mis datos",
+          description: "El repositorio de su cuenta, que contiene todos los registros de datos públicos. Este archivo no incluye incrustaciones de medios o sus datos privados, que deben ser obtenidos por separado.",
           action: {
-            exportMyData: 'Export my data'
+            exportMyData: "Exportar mis datos"
           }
         },
         deleteAccount: {
-          title: 'Account removal',
-          description: 'Disabling your account means your profile, posts, feeds, and lists will no longer be visible to other Bluesky users. You can reactivate your account by logging in.',
+          title: "Eliminar cuenta",
+          description: "Deshabilitar su cuenta significa que su perfil, publicaciones, canales y listas ya no serán visibles para otros usuarios de Bluesky. Puedes reactivar tu cuenta iniciando sesión.",
           action: {
-            disableAccount: 'Disable account',
-            deleteAccount: 'Delete account'
+            disableAccount: "Desactivar cuenta",
+            deleteAccount: "Eliminar cuenta"
           }
         },
         wip: {
-          title: "More settings on the way",
-          description: "All the settings are accessible from Bluesky. We are currently focusing on enhancing the features of Gridsky to provide a better user experience."
+          title: "Más ajustes en el camino",
+          description: "Todos los ajustes son accesibles desde Bluesky. Actualmente nos estamos centrando en mejorar las características de Gridsky para proporcionar una mejor experiencia de usuario."
         }
       },
       profile: {
-        appBar: 'Profile',
+        appBar: "Perfil",
         fields: {
           handle: {
-            label: "Username",
-            placeholder: "username",
-            description: "Help people discover your account by using the name that you're known by: either your full name, nickname or business name"
+            label: "Usuario",
+            placeholder: "nombre de usuario",
+            description: "Ayuda a la gente a descubrir tu cuenta usando el nombre que conoces: tu nombre completo, apodo o nombre de negocio"
           },
           displayName: {
-            label: "Name",
-            placeholder: "Name",
-            description: "Help people discover your account by using the name that you're known by: either your full name, nickname or business name"
+            label: "Nombre",
+            placeholder: "Nombre",
+            description: "Ayuda a la gente a descubrir tu cuenta usando el nombre que conoces: tu nombre completo, apodo o nombre de negocio"
           },
           description: {
             label: "Bio",
             placeholder: "Bio",
-            description: "Your bio is visible to everyone on and off Gridsky"
+            description: "Tu biografía es visible para todo el mundo en Gridsky y fuera"
           },
           avatar: {
             title: "Avatar",
             action: {
-              change: 'Change avatar',
-              remove: 'Remove avatar'
+              change: "Cambiar avatar",
+              remove: "Eliminar avatar"
             }
           },
           banner: {
-            title: "Banner",
+            title: "Estandarte",
             action: {
-              change: 'Change banner',
-              remove: 'Remove banner'
+              change: "Cambiar banner",
+              remove: "Eliminar banner"
             }
           }
         }
       },
       appearance: {
-        appBar: 'Appearance',
+        appBar: "Apariencia",
         category: {
-          animation: 'Animation'
+          animation: "Animación"
         },
         fields: {
           themeName: {
-            label: "Theme",
-            placeholder: "theme"
+            label: "Tema",
+            placeholder: "tema"
           },
           themeVariant: {
-            label: "Variant",
-            placeholder: "variant"
+            label: "Variante",
+            placeholder: "variante"
           },
           themeColorPrimary: {
-            label: "Primary color",
+            label: "Color principal",
             placeholder: "#0095f6"
           },
-          animation: 'Animation',
+          animation: "Animación",
           animationEnabled: {
-            title: "Animated cubes"
+            title: "Cubos animados"
           },
           animationSpeed: {
-            title: "Animated speed"
+            title: "Velocidad Animada"
           },
           animationShowBannerInstead: {
-            title: "Show banner"
+            title: "Mostrar banner"
           },
           animationColors: {
-            label: "Grid configurator"
+            label: "Configurador de cuadrícula"
           }
         },
         unlock: {
-          title: "Your profile, your style",
-          description: "Get inspired while supporting Gridsky, and unlock aesthetics for your profile"
+          title: "Tu perfil, tu estilo",
+          description: "Inspirate mientras soportas Gridsky y desbloquea la estética para tu perfil"
         }
       },
       language: {
-        appBar: 'Language',
+        appBar: "Idioma",
         fields: {
           language: {
-            label: "Language"
+            label: "Idioma"
           }
         },
         contribute: {
-          line1: "We're aiming to support as many languages as possible, but only a few are available for now.",
-          line2: "Would you like to help? We can offer two months of Gridsky {ae} for free if you offer to translate Gridsky in your language. More info on Discord"
+          line1: "Estamos tratando de soportar tantos idiomas como sea posible, pero sólo unos pocos están disponibles por ahora.",
+          line2: "¿Te gustaría ayudar? Podemos ofrecer dos meses de Gridsky {ae} gratis si te ofreces traducir Gridsky a tu idioma. Más información en Discord"
         }
       },
       grid: {
-        appBar: 'Profile Grids',
+        appBar: "Rejillas de perfil",
         showcase: {
           icons: {
             showAll: ''
           }
         },
         category: {
-          filter: "Filter",
-          layout: 'Layout',
-          media: 'Media'
+          filter: "Filtro",
+          layout: "Diseño",
+          media: "Medios"
         },
         fields: {
           name: {
-            label: "Grid name",
-            placeholder: "grid name"
+            label: "Nombre de cuadrícula",
+            placeholder: "nombre de cuadrícula"
           },
           icon: {
-            label: "Grid icon",
-            placeholder: "lucide:grid"
+            label: "Icono de cuadrícula",
+            placeholder: "lucide:cuadrícula"
           },
           filterInclude: {
-            label: "Filter by hashtags",
+            label: "Filtrar por hashtags",
             placeholder: "#hashtag"
           },
           filterExclude: {
-            label: "Exclude by hashtags",
+            label: "Excluir por hashtags",
             placeholder: "#hashtag"
           },
           layout: {
-            label: "Grid layout"
+            label: "Diseño de cuadrícula"
           },
           videoOnly: {
-            label: "Video optimized"
+            label: "Vídeo optimizado"
           }
         }
       },
       menu: {
-        appBar: 'Account & Settings'
+        appBar: "Cuenta y ajustes"
       },
       about: {
-        appBar: 'About'
+        appBar: "Acerca de"
       }
     },
     timeAgo: {
-      "just-now": "just now",
+      "just-now": "justo ahora",
       "ago": "{0} ago",
-      "in": "in {0}",
-      "last-month": "last month",
-      "next-month": "next month",
-      "month": "month | months",
-      "last-year": "last year",
-      "next-year": "next year",
-      "year": "year | years",
-      "yesterday": "yesterday",
-      "tomorrow": "tomorrow",
-      "day": "day | days",
-      "last-week": "last week",
-      "next-week": "next week",
-      "week": "week | weeks",
-      "hour": "hour | hours",
-      "minute": "minute | minutes",
-      "second": "second | seconds"
+      "in": "en {0}",
+      "last-month": "último mes",
+      "next-month": "próximo mes",
+      "month": "mes | meses",
+      "last-year": "último año",
+      "next-year": "próximo año",
+      "year": "año | años",
+      "yesterday": "ayer",
+      "tomorrow": "mañana",
+      "day": "día | días",
+      "last-week": "última semana",
+      "next-week": "próxima semana",
+      "week": "semana | semanas",
+      "hour": "hora | horas",
+      "minute": "minuto | minutos",
+      "second": "segundo | segundos"
     },
     $vuetify: {
       badge: '',
       loading: '',
       datePicker: {
-        title: 'Select date'
+        title: "Seleccionar fecha"
       }
     }
   };
