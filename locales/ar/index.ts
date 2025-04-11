@@ -2,115 +2,115 @@ export default defineI18nLocale(async locale => {
   return {
     common: {
       action: {
-        createProfile: 'Create profile',
-        change: 'Change',
-        remove: 'Remove',
+        createProfile: "إنشاء ملف شخصي",
+        change: "تغيير",
+        remove: "إزالة",
         reset: 'Reset',
-        close: 'Close',
-        create: 'Create',
-        share: 'Share',
-        submit: 'Submit',
-        saveChanges: 'Save changes',
-        post: 'Post',
-        done: 'Done',
-        cancel: 'Cancel'
+        close: "أغلق",
+        create: "إنشاء",
+        share: "مشاركة",
+        submit: "إرسال",
+        saveChanges: "حفظ التغييرات",
+        post: "نشر",
+        done: "تم",
+        cancel: "إلغاء"
       },
       list: {
-        empty: "It's empty here"
+        empty: "إنها فارغة هنا"
       },
-      soon: 'Soon'
+      soon: "قريباً"
     },
     navigation: {
-      home: 'Home',
-      search: 'Search',
-      explore: 'Explore',
-      support: 'Support',
-      notifications: 'Notifications',
-      messages: 'Messages',
-      profile: 'Profile',
-      settings: 'Settings',
-      create: 'Create',
-      other: 'Other'
+      home: "المنزل",
+      search: "البحث",
+      explore: "استكشف",
+      support: "الدعم",
+      notifications: "الإشعارات",
+      messages: "الرسائل",
+      profile: "الملف الشخصي",
+      settings: "الإعدادات",
+      create: "إنشاء",
+      other: "اخرى"
     },
     following: {
-      title: 'Timeline'
+      title: "الخط"
     },
     search: {
-      title: 'Search',
-      placeholder: 'Search',
+      title: "البحث",
+      placeholder: "البحث",
       suggestedTopics: {
-        title: 'Suggested'
+        title: "مقترح"
       },
       trendingTopics: {
-        title: 'Trending'
+        title: "متداولة"
       },
       categories: {
         manager: {
-          title: 'Saved searches',
-          empty: 'There are no saved feeds'
+          title: "عمليات البحث المحفوظة",
+          empty: "لا توجد أية تغذية محفوظة"
         }
       }
     },
     explore: {
-      title: 'Explore',
+      title: "استكشف",
       forYou: {
-        title: 'Discover',
-        appBar: 'For you'
+        title: "اكتشف",
+        appBar: "من أجلك"
       },
       discover: {
-        title: 'Discover',
-        appBar: 'Discover'
+        title: "اكتشف",
+        appBar: "اكتشف"
       },
       latest: {
-        title: 'Latest',
-        appBar: 'Latest'
+        title: "الأحدث",
+        appBar: "الأحدث"
       },
       following: {
-        title: 'Following',
-        appBar: 'Following'
+        title: "تابع",
+        appBar: "تابع"
       },
       search: {
-        title: 'Search',
-        appBar: 'Search'
+        title: "البحث",
+        appBar: "البحث"
       }
     },
     timeline: {
       list: {
-        name: 'Posts'
+        name: "المشاركات"
       }
     },
     feed: {
       header: {
         menu: {
-          explore: 'Explore feeds',
-          changeLayout: 'Change layout',
-          reorderFeeds: 'Reorder feeds',
-          shareFeed: 'Share feed'
+          explore: "استكشاف التغذية",
+          changeLayout: "تغيير التخطيط",
+          reorderFeeds: "إعادة ترتيب التغذية",
+          shareFeed: "مشاركة الخلاصة"
         }
       },
       list: {
-        title: 'Feeds',
-        appBar: 'Feeds'
+        title: "التحديثات",
+        appBar: "التحديثات"
       },
       static: {
         following: {
-          title: 'Following',
-          description: 'Personal feed'
+          title: "تابع",
+          description: "تغذية شخصية"
         }
       },
-      createdBy: `Feed by {handle}`,
+      createdBy: `تغذية من قبل {handle}`,
       categories: {
         manager: {
-          title: 'Feed categories',
-          empty: 'There are no saved feeds'
+          title: "فئات التغذية",
+          empty: "لا توجد أية تغذية محفوظة"
         }
       },
       suggestions: {
-        title: 'Suggested feeds'
+        title: "الخلاصات المقترحة"
       },
       like: {
-        person: 'Liked by 1',
-        people: 'Liked by {count}'
+        person: "إعجاب من قبل 1",
+        people: "أعجبني من قبل {count}"
       }
     },
     account: {
@@ -118,367 +118,367 @@ export default defineI18nLocale(async locale => {
         form: {
           identifier: {
             label: 'Identifier',
-            placeholder: 'Username or e-mail address'
+            placeholder: "اسم المستخدم أو عنوان البريد الإلكتروني"
           },
           password: {
-            label: 'Password',
+            label: "كلمة المرور",
             placeholder: ''
           },
           authFactorToken: {
-            label: 'Confirm 2FA',
-            placeholder: 'Confirmation code'
+            label: "تأكيد 2FA",
+            placeholder: "رمز التأكيد"
           },
           resolver: {
-            prompt: 'Use a different handle resolver:'
+            prompt: "استخدام معالج مختلف:"
           },
-          action: 'Login'
+          action: "تسجيل الدخول"
         }
       },
       switch: {
-        appBar: 'Connected accounts'
+        appBar: "حسابات متصلة"
       },
       suggestions: {
-        title: 'Suggested accounts'
+        title: "الحسابات المقترحة"
       },
       action: {
-        or: 'or',
-        login: 'Login',
-        lostPassword: 'Lost password?',
-        addAccount: 'Add account',
-        switchAccount: 'Switch account',
-        logout: 'Logout'
+        or: "أو",
+        login: "تسجيل الدخول",
+        lostPassword: "كلمة المرور المفقودة؟",
+        addAccount: "إضافة حساب",
+        switchAccount: "تبديل الحساب",
+        logout: "تسجيل الخروج"
       }
     },
     profile: {
       stats: {
-        posts: 'Posts',
-        followers: 'Followers',
-        follows: 'Following'
+        posts: "المشاركات",
+        followers: "المتابِعون",
+        follows: "تابع"
       },
       action: {
-        followProfile: 'Follow',
-        unfollowProfile: 'Unfollow',
-        editProfile: 'Edit profile',
-        shareProfile: 'Share profile',
-        changeBanner: 'Change banner'
+        followProfile: "اتبع",
+        unfollowProfile: "إلغاء المتابعة",
+        editProfile: "تعديل الملف الشخصي",
+        shareProfile: "مشاركة الملف الشخصي",
+        changeBanner: "تغيير البانر"
       },
       collection: {
         default: {
-          label: 'Posts'
+          label: "المشاركات"
         }
       },
       media: {
         add: {
-          title: "Create new post",
-          subtitle: "Drag photos and videos here",
-          action: "Select files"
+          title: "إنشاء مشاركة جديدة",
+          subtitle: "اسحب الصور والفيديوهات هنا",
+          action: "حدد الملفات"
         },
         menu: {
-          addCover: "Add cover",
-          addToAlbum: "Add media",
-          cloneToReel: "Clone to reel",
-          convertToAlbum: "Convert to album",
-          convertToIframe: "Convert to iframe",
-          remove: "Remove",
-          removeCover: "Remove cover",
-          removeFromAlbum: "Remove media",
-          replaceCover: "Replace cover",
-          replaceMedia: "Replace media"
+          addCover: "إضافة غلاف",
+          addToAlbum: "إضافة وسائط",
+          cloneToReel: "استنساخ للريال",
+          convertToAlbum: "تحويل إلى ألبوم",
+          convertToIframe: "تحويل إلى iframe",
+          remove: "إزالة",
+          removeCover: "إزالة الغطاء",
+          removeFromAlbum: "إزالة الوسائط",
+          replaceCover: "استبدال الغلاف",
+          replaceMedia: "استبدال الوسائط"
         }
       }
     },
     thread: {
       reply: {
         bottomSheet: {
-          title: 'Comments'
+          title: "تعليقات"
         },
         list: {
-          empty: "Be the first to comment"
+          empty: "كن أول من يعلق"
         },
         form: {
           textField: {
-            placeholder: 'Add a comment...'
+            placeholder: "إضافة تعليق..."
           }
         },
         delete: {
-          label: 'Delete',
-          confirm: 'Are you sure to delete this reply?'
+          label: "حذف",
+          confirm: "هل أنت متأكد من حذف هذا الرد؟"
         },
         common: {
-          showReplies: 'View all {count} replies'
+          showReplies: "عرض جميع الردود {count}"
         },
         action: {
-          reply: 'Reply',
-          replyTo: 'Replying to',
-          backToComments: 'Back to comments'
+          reply: "الرد",
+          replyTo: "الرد على",
+          backToComments: "العودة إلى التعليقات"
         }
       },
       likes: {
-        person: 'person',
-        people: 'people',
-        beTheFirst: 'Be the first to like',
+        person: "شخص",
+        people: "الناس",
+        beTheFirst: "كن أول من يعجبه",
         personLikesThis: {
           beforeCount: '',
-          afterCount: 'likes this'
+          afterCount: "أعجب بهذا"
         },
         peopleLikeThis: {
           beforeCount: '',
-          afterCount: 'like this'
+          afterCount: "مثل هذا"
         },
         personWithHighlight: {
-          beforeCount: 'Liked by {names}',
+          beforeCount: "أعجبني من قبل {names}",
           afterCount: ''
         },
         peopleWithHighlight: {
-          beforeCount: 'Liked by {names} and',
+          beforeCount: "أعجبها {names} و",
           afterCount: ''
         },
         personShort: {
           beforeCount: '',
-          afterCount: 'like'
+          afterCount: "مثل"
         },
         peopleShort: {
           beforeCount: '',
-          afterCount: 'likes'
+          afterCount: "أعجبني"
         },
         bottomSheet: {
-          title: 'Likes'
+          title: "إعجاب"
         }
       }
     },
     notifications: {
-      title: 'Notifications',
-      appBar: 'Notifications',
-      like: "liked your post",
-      repost: "reposted your post",
-      follow: "followed you",
-      mention: "mentioned you",
-      reply: "replied to your post",
-      default: "interacted with your post",
-      unknownUser: "Someone"
+      title: "الإشعارات",
+      appBar: "الإشعارات",
+      like: "أعجبت مشاركتك",
+      repost: "إعادة نشر مشاركتك",
+      follow: "تابعك",
+      mention: "ذكرك",
+      reply: "رد على مشاركتك",
+      default: "تفاعل مع مشاركتك",
+      unknownUser: "شخص ما"
     },
     settings: {
-      appBar: 'Settings',
+      appBar: "الإعدادات",
       navigation: {
-        account: 'Account',
-        profile: 'Profile',
-        appearance: 'Appearance',
-        privacy: 'Privacy',
-        security: 'Security',
-        management: 'Management',
-        language: 'Language',
-        grid: 'Profile Grids',
-        badges: 'Stand out',
-        development: 'Development',
-        support: 'Support',
-        about: 'About',
-        help: 'Help',
-        community: 'Community',
-        whatsnew: 'What\'s new'
+        account: "حساب",
+        profile: "الملف الشخصي",
+        appearance: "المظهر",
+        privacy: "الخصوصية",
+        security: "أمان",
+        management: "الإدارة",
+        language: "اللغة",
+        grid: "الملفّات الشخصية",
+        badges: "توقف عن العمل",
+        development: "التطوير",
+        support: "الدعم",
+        about: "حول",
+        help: "مساعدة",
+        community: "المجتمع",
+        whatsnew: "ما الجديد"
       },
       main: {
-        appBar: 'Dashboard',
+        appBar: "لوحة التحكم",
         section: {
           password: {
-            title: 'Password and authentication'
+            title: "كلمة المرور والمصادقة"
           }
         }
       },
       account: {
-        appBar: 'Account',
+        appBar: "حساب",
         resetPassword: {
           form: {
             email: {
-              label: 'E-mail',
-              placeholder: 'Insert your e-mail address'
+              label: "البريد الإلكتروني",
+              placeholder: "أدخل عنوان بريدك الإلكتروني"
             },
-            action: 'Reset password'
+            action: "إعادة تعيين كلمة المرور"
           }
         },
         changePassword: {
           action: {
-            changePassword: 'Change password'
+            changePassword: "تغيير كلمة المرور"
           }
         },
         factoryAuth: {
-          title: 'Two-factor authentication (2FA)',
-          description: 'Require an email code to log in to your account.',
+          title: "المصادقة الثنائية (2FA)",
+          description: "يتطلب رمز بريد إلكتروني لتسجيل الدخول إلى حسابك.",
           action: {
-            enable2FA: 'Enable Email 2FA'
+            enable2FA: "تمكين البريد الإلكتروني 2FA"
           }
         },
         exportData: {
-          title: 'Export my data',
-          description: 'Your account repository, containing all public data records. This file does not include media embeds or your private data, which must be fetched separately.',
+          title: "تصدير بياناتي",
+          description: "مستودع حسابك، الذي يحتوي على جميع سجلات البيانات العامة. هذا الملف لا يتضمن الوسائط أو بياناتك الخاصة، التي يجب أن تجلب بشكل منفصل.",
           action: {
-            exportMyData: 'Export my data'
+            exportMyData: "تصدير بياناتي"
           }
         },
         deleteAccount: {
-          title: 'Account removal',
-          description: 'Disabling your account means your profile, posts, feeds, and lists will no longer be visible to other Bluesky users. You can reactivate your account by logging in.',
+          title: "إزالة الحساب",
+          description: "تعطيل حسابك يعني أن ملفك الشخصي، المشاركات، التغذية والقوائم لن تكون مرئية لمستخدمي Bluesky الآخرين. يمكنك إعادة تنشيط حسابك عن طريق تسجيل الدخول.",
           action: {
-            disableAccount: 'Disable account',
-            deleteAccount: 'Delete account'
+            disableAccount: "تعطيل الحساب",
+            deleteAccount: "حذف الحساب"
           }
         },
         wip: {
-          title: "More settings on the way",
-          description: "All the settings are accessible from Bluesky. We are currently focusing on enhancing the features of Gridsky to provide a better user experience."
+          title: "المزيد من الإعدادات في الطريق",
+          description: "جميع الإعدادات متاحة من Bluesky. نحن نركز حاليا على تعزيز ميزات Gridsky لتوفير تجربة أفضل للمستخدم."
         }
       },
       profile: {
-        appBar: 'Profile',
+        appBar: "الملف الشخصي",
         fields: {
           handle: {
-            label: "Username",
-            placeholder: "username",
-            description: "Help people discover your account by using the name that you're known by: either your full name, nickname or business name"
+            label: "اسم المستخدم",
+            placeholder: "اسم المستخدم",
+            description: "ساعد الناس على اكتشاف حسابك باستخدام الاسم الذي تعرفه من خلال: إما اسمك الكامل، الاسم المستعار أو اسم العمل"
           },
           displayName: {
-            label: "Name",
-            placeholder: "Name",
-            description: "Help people discover your account by using the name that you're known by: either your full name, nickname or business name"
+            label: "الاسم",
+            placeholder: "الاسم",
+            description: "ساعد الناس على اكتشاف حسابك باستخدام الاسم الذي تعرفه من خلال: إما اسمك الكامل، الاسم المستعار أو اسم العمل"
           },
           description: {
-            label: "Bio",
-            placeholder: "Bio",
-            description: "Your bio is visible to everyone on and off Gridsky"
+            label: "بيو",
+            placeholder: "بيو",
+            description: "بياناتك الشخصية مرئية للجميع في جريدسكي وخارجها"
           },
           avatar: {
-            title: "Avatar",
+            title: "الرمزية",
             action: {
-              change: 'Change avatar',
-              remove: 'Remove avatar'
+              change: "تغيير الصورة الرمزية",
+              remove: "إزالة الصورة الرمزية"
             }
           },
           banner: {
-            title: "Banner",
+            title: "لافتة",
             action: {
-              change: 'Change banner',
-              remove: 'Remove banner'
+              change: "تغيير البانر",
+              remove: "إزالة البانر"
             }
           }
         }
       },
       appearance: {
-        appBar: 'Appearance',
+        appBar: "المظهر",
         category: {
-          animation: 'Animation'
+          animation: "الحركة"
         },
         fields: {
           themeName: {
-            label: "Theme",
-            placeholder: "theme"
+            label: "السمة",
+            placeholder: "السمة"
           },
           themeVariant: {
-            label: "Variant",
-            placeholder: "variant"
+            label: "المتغير",
+            placeholder: "المتغير"
           },
           themeColorPrimary: {
-            label: "Primary color",
+            label: "اللون الأساسي",
             placeholder: "#0095f6"
           },
-          animation: 'Animation',
+          animation: "الحركة",
           animationEnabled: {
-            title: "Animated cubes"
+            title: "مكعبات متحركة"
           },
           animationSpeed: {
-            title: "Animated speed"
+            title: "السرعة المتحركة"
           },
           animationShowBannerInstead: {
-            title: "Show banner"
+            title: "إظهار البانر"
           },
           animationColors: {
-            label: "Grid configurator"
+            label: "تكوين الشبكة"
           }
         },
         unlock: {
-          title: "Your profile, your style",
-          description: "Get inspired while supporting Gridsky, and unlock aesthetics for your profile"
+          title: "ملفك الشخصي، النمط الخاص بك",
+          description: "احصل على إلهام أثناء دعم Gridsky، وفتح الجمال لملفك الشخصي"
         }
       },
       language: {
-        appBar: 'Language',
+        appBar: "اللغة",
         fields: {
           language: {
-            label: "Language"
+            label: "اللغة"
           }
         },
         contribute: {
-          line1: "We're aiming to support as many languages as possible, but only a few are available for now.",
-          line2: "Would you like to help? We can offer two months of Gridsky {ae} for free if you offer to translate Gridsky in your language. More info on Discord"
+          line1: "نحن نهدف إلى دعم أكبر عدد ممكن من اللغات، ولكن هناك القليل فقط من اللغات المتاحة الآن.",
+          line2: "هل ترغب في المساعدة؟ يمكننا تقديم شهرين من Gridsky {ae} مجاناً إذا عرضت ترجمة Gridsky بلغتك. المزيد من المعلومات في ديسكورد"
         }
       },
       grid: {
-        appBar: 'Profile Grids',
+        appBar: "الملفّات الشخصية",
         showcase: {
           icons: {
             showAll: ''
           }
         },
         category: {
-          filter: "Filter",
-          layout: 'Layout',
-          media: 'Media'
+          filter: "تصفية",
+          layout: "تخطيط",
+          media: "الوسائط"
         },
         fields: {
           name: {
-            label: "Grid name",
-            placeholder: "grid name"
+            label: "اسم الشبكة",
+            placeholder: "اسم الشبكة"
           },
           icon: {
-            label: "Grid icon",
-            placeholder: "lucide:grid"
+            label: "أيقونة الشبكة",
+            placeholder: "لوسيد:grid"
           },
           filterInclude: {
-            label: "Filter by hashtags",
+            label: "تصفية حسب الوسوم",
             placeholder: "#hashtag"
           },
           filterExclude: {
-            label: "Exclude by hashtags",
+            label: "استبعاد بواسطة علامات الهاش",
             placeholder: "#hashtag"
           },
           layout: {
-            label: "Grid layout"
+            label: "تخطيط الشبكة"
           },
           videoOnly: {
-            label: "Video optimized"
+            label: "تم تحسين الفيديو"
           }
         }
       },
       menu: {
-        appBar: 'Account & Settings'
+        appBar: "الحساب و الإعدادات"
       },
       about: {
-        appBar: 'About'
+        appBar: "حول"
       }
     },
     timeAgo: {
-      "just-now": "just now",
+      "just-now": "الآن فقط",
       "ago": "{0} ago",
-      "in": "in {0}",
-      "last-month": "last month",
-      "next-month": "next month",
-      "month": "month | months",
-      "last-year": "last year",
-      "next-year": "next year",
-      "year": "year | years",
-      "yesterday": "yesterday",
-      "tomorrow": "tomorrow",
-      "day": "day | days",
-      "last-week": "last week",
-      "next-week": "next week",
-      "week": "week | weeks",
-      "hour": "hour | hours",
-      "minute": "minute | minutes",
-      "second": "second | seconds"
+      "in": "في {0}",
+      "last-month": "الشهر الماضي",
+      "next-month": "الشهر القادم",
+      "month": "شهر <unk> أشهر",
+      "last-year": "العام الماضي",
+      "next-year": "العام القادم",
+      "year": "سنة <unk> سنوات",
+      "yesterday": "أمس",
+      "tomorrow": "غدا",
+      "day": "اليوم <unk> أيام",
+      "last-week": "الأسبوع الماضي",
+      "next-week": "الأسبوع القادم",
+      "week": "الأسبوع <unk> أسابيع",
+      "hour": "ساعة <unk> ساعات",
+      "minute": "دقيقة <unk> دقائق",
+      "second": "ثانية <unk> ثانية"
     },
     $vuetify: {
       badge: '',
       loading: '',
       datePicker: {
-        title: 'Select date'
+        title: "حدد التاريخ"
       }
     }
   };
