@@ -129,7 +129,7 @@ export default defineI18nLocale(async locale => {
                         placeholder: 'Confirmation code',
                     },
                     resolver: {
-                        prompt: 'Use a different handle resolver:'
+                        prompt: 'Use a different AT Protocol service:'
                     },
                     action: 'Login',
                 }
