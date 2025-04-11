@@ -47,7 +47,7 @@ export default defineI18nLocale(async locale => {
       categories: {
         manager: {
           title: "Ricerche salvate",
-          empty: 'There are no saved feeds'
+          empty: "Non ci sono feed salvati"
         }
       }
     },
@@ -76,7 +76,7 @@ export default defineI18nLocale(async locale => {
     },
     timeline: {
       list: {
-        name: 'Posts'
+        name: "Post"
       }
     },
     feed: {
@@ -102,7 +102,7 @@ export default defineI18nLocale(async locale => {
       categories: {
         manager: {
           title: "Categorie feed",
-          empty: 'There are no saved feeds'
+          empty: "Non ci sono feed salvati"
         }
       },
       suggestions: {
@@ -129,7 +129,7 @@ export default defineI18nLocale(async locale => {
             placeholder: "Codice di conferma"
           },
           resolver: {
-            prompt: 'Use a different handle resolver:'
+            prompt: "Usa un diverso risolutore di maniglia:"
           },
           action: "Accedi"
         }
@@ -160,7 +160,7 @@ export default defineI18nLocale(async locale => {
         unfollowProfile: "Smetti di seguire",
         editProfile: "Modifica profilo",
         shareProfile: "Condividi profilo",
-        changeBanner: 'Change banner'
+        changeBanner: "Cambia banner"
       },
       collection: {
         default: {
@@ -209,7 +209,7 @@ export default defineI18nLocale(async locale => {
         },
         action: {
           reply: "Rispondi",
-          replyTo: 'Replying to',
+          replyTo: "Risposta a",
           backToComments: "Torna ai commenti"
         }
       },
@@ -269,7 +269,7 @@ export default defineI18nLocale(async locale => {
         language: "Lingua",
         grid: "Griglie",
         badges: "Distinguiti",
-        development: 'Development',
+        development: "Sviluppo",
         support: "Supporto",
         about: "Informazioni",
         help: "Aiuto",
