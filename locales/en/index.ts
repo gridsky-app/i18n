@@ -430,6 +430,7 @@ export default defineI18nLocale(async locale => {
                     icon: {
                         label: "Grid icon",
                         placeholder: "lucide:grid",
+                        details: 'Discover icons for your grid at'
                     },
                     filterInclude: {
                         label: "Filter by hashtags",
