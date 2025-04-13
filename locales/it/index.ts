@@ -10,13 +10,72 @@ export default defineI18nLocale(async locale => {
         create: "Crea",
         share: "Condividi",
         submit: "Invia",
-        saveChanges: "Conferma",
+        save: "Salva",
+        confirm: "Conferma",
+        restore: 'Ripristina',
+        saveChanges: "Salva modifiche",
+        restoreChanges: 'Ripristina modifiche',
         post: "Pubblica",
         done: "Conferma",
         cancel: "Annulla"
       },
       list: {
         empty: "Non c'è nulla qui"
+      },
+      youSureBro: {
+        "notice1": "Fai attenzione, un solo passo falso e il mondo crollerà",
+        "notice2": "Ehi, sicuro di volerlo fare? Niente rimpianti dopo eh",
+        "notice3": "Stai cambiando qualcosa? Spero tu abbia un piano B",
+        "notice4": "Ops, l'hai toccato! Ora devi confermare",
+        "notice5": "Piccolo cambiamento, grandi conseguenze. Scegli bene",
+        "notice6": "Un solo clic potrebbe cambiare la storia... o solo le impostazioni",
+        "notice7": "Potrebbe essere la miglior o la peggior decisione della tua vita",
+        "notice8": "Attento, il destino dell'universo dipende da questa azione",
+        "notice9": "Clicca con saggezza, giovane padawan",
+        "notice10": "Promemoria amichevole: nella vita reale non c'è il tasto annulla",
+        "notice11": "Alcuni dicono che la fortuna aiuta gli audaci. Altri dicono: non toccarlo",
+        "notice12": "Potrebbe essere la tua origine da cattivo… o solo una piccola modifica",
+        "notice13": "Stai per fare un cambiamento. Fallo valere",
+        "notice14": "Un clic dalla grandezza… o dal disastro",
+        "notice15": "Potrebbe andare molto bene… o molto, molto male",
+        "notice16": "Pensa prima di cliccare. Oppure no. Fai tu",
+        "notice17": "Sei assolutamente, completamente, al 100% sicuro?",
+        "notice18": "Immagina di spiegare questo errore a un colloquio",
+        "notice19": "Qual è il peggio che può succedere? Anzi, meglio non rispondere",
+        "notice20": "Nessuna pressione, ma potrebbe essere irreversibile",
+        "notice21": "C'è una possibilità che funzioni. Una possibilità",
+        "notice22": "Un semplice cambiamento, una semplice conseguenza... o forse no",
+        "notice23": "Clicca ora, rimpiangi dopo. Giusto?",
+        "notice24": "Sicuro? Ma tipo, davvero, DAVVERO sicuro?",
+        "notice25": "Ogni grande errore inizia con un semplice clic",
+        "notice26": "Questo cambiamento sarà ricordato nei libri di storia… o forse no",
+        "notice27": "E se questo pulsante avesse sentimenti? Vorrebbe essere cliccato?",
+        "notice28": "Alcuni cambiamenti sono reversibili. Altri ti perseguitano per sempre",
+        "notice29": "Stai aggiornando un’impostazione o riscrivendo il destino?",
+        "notice30": "Speriamo che non scateni una reazione a catena",
+        "notice31": "Cliccare questo è come lanciare una moneta. Testa o croce?",
+        "notice32": "La leggenda dice che solo i più coraggiosi osano cliccare",
+        "notice33": "Se fosse un film, ora ci sarebbe una pausa drammatica",
+        "notice34": "Cosa potrebbe mai andare storto? Ultime parole famose",
+        "notice35": "Cliccare potrebbe causare conseguenze impreviste",
+        "notice36": "Un saggio una volta disse: 'Pensa prima di cliccare'",
+        "notice37": "Stai per fare la storia, o solo una piccola modifica?",
+        "notice38": "Se va male, fingiamo che non sia mai successo",
+        "notice39": "Curiosità: cliccare questo potrebbe cambiare la tua vita",
+        "notice40": "Nel dubbio, lancia una moneta. Se sei ancora in dubbio, non cliccare",
+        "notice41": "Questo è un momento di grande responsabilità. O forse no",
+        "notice42": "La leggenda dice che, una volta cliccato, non si torna indietro",
+        "notice43": "Se fosse un videogioco, questa sarebbe la schermata 'Sei sicuro?'",
+        "notice44": "Piccolo cambiamento, enormi conseguenze. Nessuna pressione",
+        "notice45": "Controlla una volta, due, tre… poi forse clicca",
+        "notice46": "Questo è il tuo momento 'prima e dopo'",
+        "notice47": "Qui non c'è rete di sicurezza. Solo fiducia",
+        "notice48": "Cliccare è come entrare nell'ignoto",
+        "notice49": "Attento, questo pulsante ha problemi di fiducia",
+        "notice50": "Alcune decisioni ci definiscono. Altre aggiornano solo le impostazioni",
+        "notice51": "L'universo osserva. Fai che ne valga la pena",
+        "notice52": "Spero tu non lo rimpianga tra cinque minuti",
+        "notice53": "Sei a un clic dalla grandezza… o dalla confusione"
       },
       soon: "Presto"
     },
@@ -114,6 +173,16 @@ export default defineI18nLocale(async locale => {
       }
     },
     account: {
+      service: {
+        modal: {
+          title: "Seleziona il tuo provider",
+        },
+        usingBluesky: "Sto usando Bluesky",
+        customPds: "Sto usando un altro PDS",
+        action: {
+          add: "Aggiungi un tuo PDS"
+        }
+      },
       login: {
         form: {
           identifier: {
@@ -407,7 +476,7 @@ export default defineI18nLocale(async locale => {
         },
         contribute: {
           line1: "Vogliamo supportare il maggior numero di lingue, ma al momento ne sono disponibili solo alcune.",
-          line2: "Ti piacerebbe aiutarci? Possiamo offrirti mesi gratis di Gridsky {ae} se ci aiuti con le traduzioni nella tua lingua. Maggiori informazioni su Discord"
+          line2: "Ti piacerebbe aiutare? Più informazioni su Discord"
         }
       },
       grid: {
