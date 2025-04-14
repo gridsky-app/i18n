@@ -31,7 +31,7 @@ export default defineI18nLocale(async locale => {
                 "notice6": "A single click could change history... or just your settings",
                 "notice7": "This could be the best or worst decision of your life",
                 "notice8": "Careful, the fate of the universe depends on this action",
-                "notice9": "Click wisely, young padawan",
+                "notice9": "You’re one click away from greatness… or confusion.",
                 "notice10": "Just a friendly reminder: there's no undo button in real life",
                 "notice11": "Some say fortune favors the bold. Others say don't touch it",
                 "notice12": "This might be your villain origin story... or just a small edit",
@@ -75,7 +75,6 @@ export default defineI18nLocale(async locale => {
                 "notice50": "Some decisions define us. Others just update settings.",
                 "notice51": "The universe is watching. Make it count.",
                 "notice52": "Hope you don’t regret this in five minutes.",
-                "notice53": "You’re one click away from greatness… or confusion."
             },
             soon: 'Soon'
         },
@@ -179,6 +178,10 @@ export default defineI18nLocale(async locale => {
                 },
                 usingBluesky: "I'm using Bluesky",
                 customPds: "I'm on another PDS",
+                notice: {
+                    willUse: "You will connect via {service}",
+                    notFound: "Are you registered? Join Bluesky"
+                },
                 action: {
                     add: "Add a custom PDS"
                 }
