@@ -433,6 +433,14 @@ export default defineI18nLocale(async locale => {
                     },
                 },
             },
+            theme: {
+                appBar: 'Theme',
+                fields: {
+                    dark: {
+                        title: 'Dark theme'
+                    }
+                }
+            },
             appearance: {
                 appBar: 'Appearance',
                 category: {
@@ -450,6 +458,10 @@ export default defineI18nLocale(async locale => {
                     themeColorPrimary: {
                         label: "Primary color",
                         placeholder: "#0095f6",
+                    },
+                    themeBackgroundTone: {
+                        label: "Background tone",
+                        placeholder: "#999999",
                     },
                     animation: 'Animation',
                     animationEnabled: {
@@ -502,14 +514,7 @@ export default defineI18nLocale(async locale => {
                     icon: {
                         label: "Grid icon",
                         placeholder: "lucide:grid",
-                    },
-                    filterInclude: {
-                        label: "Filter by hashtags",
-                        placeholder: "#hashtag",
-                    },
-                    filterExclude: {
-                        label: "Exclude by hashtags",
-                        placeholder: "#hashtag",
+                        details: 'Discover icons for your grid at'
                     },
                     layout: {
                         label: "Grid layout",

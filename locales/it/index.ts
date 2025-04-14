@@ -433,6 +433,14 @@ export default defineI18nLocale(async locale => {
                     }
                 }
             },
+            theme: {
+                appBar: 'Tema',
+                fields: {
+                    dark: {
+                        title: 'Tema scuro'
+                    }
+                }
+            },
             appearance: {
                 appBar: "Aspetto",
                 category: {
@@ -502,15 +510,7 @@ export default defineI18nLocale(async locale => {
                     icon: {
                         label: "Icona griglia",
                         placeholder: "lucide:grid",
-                        details: 'Discover icons for your grid at'
-                    },
-                    filterInclude: {
-                        label: "Filtra per hashtag",
-                        placeholder: "#hashtag"
-                    },
-                    filterExclude: {
-                        label: "Escludi per hashtags",
-                        placeholder: "#hashtag"
+                        details: 'Scopri icone per la tua griglia su'
                     },
                     layout: {
                         label: "Layout griglia"
