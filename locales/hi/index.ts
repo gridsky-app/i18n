@@ -46,7 +46,7 @@ export default defineI18nLocale(async locale => {
       },
       categories: {
         manager: {
-          title: 'Saved searches',
+          title: 'Search lists',
           empty: 'There are no saved feeds'
         }
       }

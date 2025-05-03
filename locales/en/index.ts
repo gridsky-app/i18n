@@ -96,6 +96,12 @@ export default defineI18nLocale(async locale => {
         search: {
             title: 'Search',
             placeholder: 'Search',
+            header:{
+                sort: {
+                    top: "Top",
+                    latest: "Latest",
+                }
+            },
             suggestedTopics: {
                 title: 'Suggested'
             },
@@ -104,10 +110,21 @@ export default defineI18nLocale(async locale => {
             },
             categories: {
                 manager: {
-                    title: 'Saved searches',
-                    empty: 'There are no saved feeds',
+                    title: 'Categories',
+                    empty: 'There are no saved searches',
+                    category: {
+                        prompt: 'Choose a category name'
+                    }
                 },
             },
+        },
+        sidebar: {
+            manager: {
+                title: "Sidebar manager",
+                blocks: {
+                    available: "Available blocks",
+                },
+            }
         },
         explore: {
             title: 'Explore',
@@ -130,6 +147,20 @@ export default defineI18nLocale(async locale => {
             search: {
                 title: 'Search',
                 appBar: 'Search',
+            },
+            likes: {
+                appBar: "Likes",
+                header: {
+                    title: "Activity",
+                    subtitle: "Liked posts"
+                }
+            },
+            bookmarks: {
+                appBar: "Bookmarks",
+                header: {
+                    title: "Activity",
+                    subtitle: "Saved posts"
+                }
             },
         },
         timeline: {
@@ -159,8 +190,11 @@ export default defineI18nLocale(async locale => {
             createdBy: `Feed by {handle}`,
             categories: {
                 manager: {
-                    title: 'Feed categories',
+                    title: 'Categories',
                     empty: 'There are no saved feeds',
+                    category: {
+                        prompt: 'Choose a category name'
+                    }
                 },
             },
             suggestions: {
@@ -190,7 +224,7 @@ export default defineI18nLocale(async locale => {
                 form: {
                     identifier: {
                         label: 'Identifier',
-                        placeholder: 'Username or e-mail address',
+                        placeholder: 'Handle',
                     },
                     password: {
                         label: 'Password',
@@ -321,12 +355,12 @@ export default defineI18nLocale(async locale => {
         notifications: {
             title: 'Notifications',
             appBar: 'Notifications',
-            like: "liked your post",
-            repost: "reposted your post",
+            like: "liked a post",
+            repost: "reposted a post",
             follow: "followed you",
             mention: "mentioned you",
-            reply: "replied to your post",
-            default: "interacted with your post",
+            reply: "replied to a post",
+            default: "interacted with a post",
             unknownUser: "Someone"
         },
         settings: {

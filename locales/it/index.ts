@@ -190,7 +190,7 @@ export default defineI18nLocale(async locale => {
                 form: {
                     identifier: {
                         label: "Identificativo",
-                        placeholder: "Nome utente o email"
+                        placeholder: "Nome utente"
                     },
                     password: {
                         label: 'Password',
