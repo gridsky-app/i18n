@@ -235,7 +235,7 @@ export default defineI18nLocale(async locale => {
                         placeholder: 'Confirmation code',
                     },
                     resolver: {
-                        prompt: 'Use a different handle resolver:'
+                        prompt: 'Use a different AT Protocol service:'
                     },
                     action: 'Login',
                 }
@@ -478,6 +478,7 @@ export default defineI18nLocale(async locale => {
             appearance: {
                 appBar: 'Appearance',
                 category: {
+                    animation: 'Animation',
                     banner: 'Banner',
                 },
                 fields: {
@@ -498,6 +499,15 @@ export default defineI18nLocale(async locale => {
                         placeholder: "#999999",
                     },
                     animation: 'Animation',
+                    animationEnabled: {
+                        title: "Animated cubes",
+                    },
+                    animationSpeed: {
+                        title: "Animated speed",
+                    },
+                    animationShowBannerInstead: {
+                        title: "Show banner",
+                    },
                     animationColors: {
                         label: "Grid configurator",
                     },
