@@ -498,19 +498,16 @@ export default defineI18nLocale(async locale => {
                         placeholder: "#999999",
                     },
                     animation: 'Animation',
-                    animationEnabled: {
-                        title: "Use Gridsky cubes",
-                    },
-                    animationSpeed: {
-                        title: "Animated speed",
-                    },
                     animationColors: {
                         label: "Grid configurator",
                     },
-                    animationBannerBlueskyEnabled: {
+                    bannerGridskyEnabled: {
+                        title: "Use Gridsky cubes animation",
+                    },
+                    bannerBlueskyEnabled: {
                         title: "Use Bluesky banner",
                     },
-                    animationBannerShadertoyEnabled: {
+                    bannerShadertoyEnabled: {
                         title: "Use Shadertoy banner",
                     },
                     bannerShadertoyId: {
