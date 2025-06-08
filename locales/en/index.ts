@@ -430,7 +430,7 @@ export default defineI18nLocale(async locale => {
                 },
                 wip: {
                     title: "More settings on the way",
-                    description: "All the settings are accessible from Bluesky. We are currently focusing on enhancing the features of Gridsky to provide a better user experience."
+                    description: "We are currently focusing on enhancing the features of Gridsky to provide a better user experience. All the other settings are accessible from Bluesky. "
                 }
             },
             profile: {
@@ -478,7 +478,7 @@ export default defineI18nLocale(async locale => {
             appearance: {
                 appBar: 'Appearance',
                 category: {
-                    animation: 'Animation',
+                    banner: 'Banner',
                 },
                 fields: {
                     themeName: {
@@ -499,16 +499,23 @@ export default defineI18nLocale(async locale => {
                     },
                     animation: 'Animation',
                     animationEnabled: {
-                        title: "Animated cubes",
+                        title: "Use Gridsky cubes",
                     },
                     animationSpeed: {
                         title: "Animated speed",
                     },
-                    animationShowBannerInstead: {
-                        title: "Show banner",
-                    },
                     animationColors: {
                         label: "Grid configurator",
+                    },
+                    animationBannerBlueskyEnabled: {
+                        title: "Use Bluesky banner",
+                    },
+                    animationBannerShadertoyEnabled: {
+                        title: "Use Shadertoy banner",
+                    },
+                    bannerShadertoyId: {
+                        label: "Shader ID",
+                        placeholder: "shadertoy.com/view/<id>",
                     },
                 },
                 unlock: {

@@ -386,9 +386,6 @@ export default defineI18nLocale(async locale => {
           animationSpeed: {
             title: "Velocidade animada"
           },
-          animationShowBannerInstead: {
-            title: "Mostrar banner"
-          },
           animationColors: {
             label: "Configuração de grade"
           }

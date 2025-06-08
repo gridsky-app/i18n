@@ -386,9 +386,6 @@ export default defineI18nLocale(async locale => {
           animationSpeed: {
             title: "السرعة المتحركة"
           },
-          animationShowBannerInstead: {
-            title: "إظهار البانر"
-          },
           animationColors: {
             label: "تكوين الشبكة"
           }

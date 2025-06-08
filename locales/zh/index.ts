@@ -386,9 +386,6 @@ export default defineI18nLocale(async locale => {
           animationSpeed: {
             title: "动画速度"
           },
-          animationShowBannerInstead: {
-            title: "显示素材"
-          },
           animationColors: {
             label: "网格配置器"
           }
