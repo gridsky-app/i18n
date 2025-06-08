@@ -10,13 +10,71 @@ export default defineI18nLocale(async locale => {
                 create: 'Create',
                 share: 'Share',
                 submit: 'Submit',
+                confirm: 'Confirm',
+                save: 'Save',
+                restore: 'Restore',
                 saveChanges: 'Save changes',
+                restoreChanges: 'Restore changes',
                 post: 'Post',
                 done: 'Done',
                 cancel: 'Cancel',
             },
             list: {
                 empty: "It's empty here",
+            },
+            youSureBro: {
+                "notice1": "Be careful, one false step and the world will collapse",
+                "notice2": "Hey, you sure about this? No regrets later",
+                "notice3": "Changing things? Hope you have a backup plan",
+                "notice4": "Oops, you touched it! Now you gotta commit",
+                "notice5": "Small change, big consequences. Choose wisely",
+                "notice6": "A single click could change history... or just your settings",
+                "notice7": "This could be the best or worst decision of your life",
+                "notice8": "Careful, the fate of the universe depends on this action",
+                "notice9": "You’re one click away from greatness… or confusion.",
+                "notice10": "Just a friendly reminder: there's no undo button in real life",
+                "notice11": "Some say fortune favors the bold. Others say don't touch it",
+                "notice12": "This might be your villain origin story... or just a small edit",
+                "notice13": "You're about to make a change. Make it count",
+                "notice14": "One click away from greatness… or disaster",
+                "notice15": "This could go very well or very, very wrong",
+                "notice16": "Think before you click. Or don’t. Up to you",
+                "notice17": "Are you absolutely, completely, 100% sure?",
+                "notice18": "Imagine explaining this mistake in a job interview",
+                "notice19": "What’s the worst that could happen? Actually, don’t answer",
+                "notice20": "No pressure, but this could be irreversible",
+                "notice21": "There’s a chance this works. A chance",
+                "notice22": "A simple change, a simple consequence... or not",
+                "notice23": "Click now, regret later. Sounds fair?",
+                "notice24": "Are you sure? Like, really, REALLY sure?",
+                "notice25": "Every great mistake starts with a simple click",
+                "notice26": "This change will be remembered in the history books… or not",
+                "notice27": "What if this button had feelings? Would it want to be clicked?",
+                "notice28": "Some changes are reversible. Others haunt you forever.",
+                "notice29": "Are you updating a setting or rewriting destiny?",
+                "notice30": "Let’s hope this doesn’t trigger a chain reaction.",
+                "notice31": "Clicking this is like flipping a coin. Heads or tails?",
+                "notice32": "Legend says the bravest souls dare to click this.",
+                "notice33": "If this were a movie, now would be the dramatic pause.",
+                "notice34": "What could possibly go wrong? Famous last words.",
+                "notice35": "Clicking this may cause unforeseen consequences.",
+                "notice36": "A wise person once said: 'Think before you click'.",
+                "notice37": "Are you about to make history, or just a minor edit?",
+                "notice38": "If this goes wrong, let's pretend it never happened.",
+                "notice39": "Fun fact: clicking this might be a turning point in your life.",
+                "notice40": "If in doubt, flip a coin. If still in doubt, don’t click.",
+                "notice41": "This is a moment of great responsibility. Or maybe not.",
+                "notice42": "Legend has it that once clicked, there’s no going back.",
+                "notice43": "If this were a game, this would be the ‘Are you sure?’ screen.",
+                "notice44": "Tiny change, massive consequences. No pressure.",
+                "notice45": "Double-check, triple-check, then maybe click.",
+                "notice46": "This is your ‘before and after’ moment.",
+                "notice47": "There’s no safety net here. Just confidence.",
+                "notice48": "Clicking this is like stepping into the unknown.",
+                "notice49": "Careful, this button has trust issues.",
+                "notice50": "Some decisions define us. Others just update settings.",
+                "notice51": "The universe is watching. Make it count.",
+                "notice52": "Hope you don’t regret this in five minutes.",
             },
             soon: 'Soon'
         },
@@ -38,6 +96,12 @@ export default defineI18nLocale(async locale => {
         search: {
             title: 'Search',
             placeholder: 'Search',
+            header:{
+                sort: {
+                    top: "Top",
+                    latest: "Latest",
+                }
+            },
             suggestedTopics: {
                 title: 'Suggested'
             },
@@ -46,10 +110,21 @@ export default defineI18nLocale(async locale => {
             },
             categories: {
                 manager: {
-                    title: 'Saved searches',
-                    empty: 'There are no saved feeds',
+                    title: 'Categories',
+                    empty: 'There are no saved searches',
+                    category: {
+                        prompt: 'Choose a category name'
+                    }
                 },
             },
+        },
+        sidebar: {
+            manager: {
+                title: "Sidebar manager",
+                blocks: {
+                    available: "Available blocks",
+                },
+            }
         },
         explore: {
             title: 'Explore',
@@ -72,6 +147,20 @@ export default defineI18nLocale(async locale => {
             search: {
                 title: 'Search',
                 appBar: 'Search',
+            },
+            likes: {
+                appBar: "Likes",
+                header: {
+                    title: "Activity",
+                    subtitle: "Liked posts"
+                }
+            },
+            bookmarks: {
+                appBar: "Bookmarks",
+                header: {
+                    title: "Activity",
+                    subtitle: "Saved posts"
+                }
             },
         },
         timeline: {
@@ -101,8 +190,11 @@ export default defineI18nLocale(async locale => {
             createdBy: `Feed by {handle}`,
             categories: {
                 manager: {
-                    title: 'Feed categories',
+                    title: 'Categories',
                     empty: 'There are no saved feeds',
+                    category: {
+                        prompt: 'Choose a category name'
+                    }
                 },
             },
             suggestions: {
@@ -114,11 +206,25 @@ export default defineI18nLocale(async locale => {
             },
         },
         account: {
+            service: {
+                modal: {
+                    title: "Select your provider",
+                },
+                usingBluesky: "I'm using Bluesky",
+                customPds: "I'm on another PDS",
+                notice: {
+                    willUse: "You will connect via {service}",
+                    notFound: "Are you registered? Join Bluesky"
+                },
+                action: {
+                    add: "Add a custom PDS"
+                }
+            },
             login: {
                 form: {
                     identifier: {
                         label: 'Identifier',
-                        placeholder: 'Username or e-mail address',
+                        placeholder: 'Handle',
                     },
                     password: {
                         label: 'Password',
@@ -249,12 +355,12 @@ export default defineI18nLocale(async locale => {
         notifications: {
             title: 'Notifications',
             appBar: 'Notifications',
-            like: "liked your post",
-            repost: "reposted your post",
+            like: "liked a post",
+            repost: "reposted a post",
             follow: "followed you",
             mention: "mentioned you",
-            reply: "replied to your post",
-            default: "interacted with your post",
+            reply: "replied to a post",
+            default: "interacted with a post",
             unknownUser: "Someone"
         },
         settings: {
@@ -324,7 +430,7 @@ export default defineI18nLocale(async locale => {
                 },
                 wip: {
                     title: "More settings on the way",
-                    description: "All the settings are accessible from Bluesky. We are currently focusing on enhancing the features of Gridsky to provide a better user experience."
+                    description: "We are currently focusing on enhancing the features of Gridsky to provide a better user experience. All the other settings are accessible from Bluesky. "
                 }
             },
             profile: {
@@ -361,10 +467,19 @@ export default defineI18nLocale(async locale => {
                     },
                 },
             },
+            theme: {
+                appBar: 'Theme',
+                fields: {
+                    dark: {
+                        title: 'Dark theme'
+                    }
+                }
+            },
             appearance: {
                 appBar: 'Appearance',
                 category: {
                     animation: 'Animation',
+                    banner: 'Banner',
                 },
                 fields: {
                     themeName: {
@@ -379,6 +494,10 @@ export default defineI18nLocale(async locale => {
                         label: "Primary color",
                         placeholder: "#0095f6",
                     },
+                    themeBackgroundTone: {
+                        label: "Background tone",
+                        placeholder: "#999999",
+                    },
                     animation: 'Animation',
                     animationEnabled: {
                         title: "Animated cubes",
@@ -391,6 +510,19 @@ export default defineI18nLocale(async locale => {
                     },
                     animationColors: {
                         label: "Grid configurator",
+                    },
+                    bannerGridskyEnabled: {
+                        title: "Use Gridsky cubes animation",
+                    },
+                    bannerBlueskyEnabled: {
+                        title: "Use Bluesky banner",
+                    },
+                    bannerShadertoyEnabled: {
+                        title: "Use Shadertoy banner",
+                    },
+                    bannerShadertoyId: {
+                        label: "Shader ID",
+                        placeholder: "shadertoy.com/view/<id>",
                     },
                 },
                 unlock: {
@@ -407,7 +539,7 @@ export default defineI18nLocale(async locale => {
                 },
                 contribute: {
                     line1: "We're aiming to support as many languages as possible, but only a few are available for now.",
-                    line2: "Would you like to help? We can offer two months of Gridsky {ae} for free if you offer to translate Gridsky in your language. More info on Discord",
+                    line2: "Would you like to help? More info on Discord",
                 }
             },
             grid: {
@@ -431,14 +563,6 @@ export default defineI18nLocale(async locale => {
                         label: "Grid icon",
                         placeholder: "lucide:grid",
                         details: 'Discover icons for your grid at'
-                    },
-                    filterInclude: {
-                        label: "Filter by hashtags",
-                        placeholder: "#hashtag",
-                    },
-                    filterExclude: {
-                        label: "Exclude by hashtags",
-                        placeholder: "#hashtag",
                     },
                     layout: {
                         label: "Grid layout",

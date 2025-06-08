@@ -1,3 +1,0 @@
-files:
-  - source: /locales/en/index.ts
-    translation: /locales/%two_letters_code%/index.ts

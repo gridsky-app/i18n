@@ -2,166 +2,241 @@ export default defineI18nLocale(async locale => {
     return {
         common: {
             action: {
-                createProfile: 'Crea profilo',
-                change: 'Modifica',
-                remove: 'Rimuovi',
-                reset: 'Reimposta',
-                close: 'Chiudi',
-                create: 'Crea',
-                share: 'Condividi',
-                submit: 'Invia',
-                post: 'Pubblica',
-                done: 'Conferma',
-                saveChanges: 'Conferma',
-                cancel: 'Annulla',
+                createProfile: "Crea profilo",
+                change: "Modifica",
+                remove: "Rimuovi",
+                reset: "Reimposta",
+                close: "Chiudi",
+                create: "Crea",
+                share: "Condividi",
+                submit: "Invia",
+                save: "Salva",
+                confirm: "Conferma",
+                restore: 'Ripristina',
+                saveChanges: "Salva modifiche",
+                restoreChanges: 'Ripristina modifiche',
+                post: "Pubblica",
+                done: "Conferma",
+                cancel: "Annulla"
             },
             list: {
-                empty: "Non c'è nulla qui",
+                empty: "Non c'è nulla qui"
             },
-            soon: 'Presto'
+            youSureBro: {
+                "notice1": "Fai attenzione, un solo passo falso e il mondo crollerà",
+                "notice2": "Ehi, sicuro di volerlo fare? Niente rimpianti dopo eh",
+                "notice3": "Stai cambiando qualcosa? Spero tu abbia un piano B",
+                "notice4": "Ops, l'hai toccato! Ora devi confermare",
+                "notice5": "Piccolo cambiamento, grandi conseguenze. Scegli bene",
+                "notice6": "Un solo clic potrebbe cambiare la storia... o solo le impostazioni",
+                "notice7": "Potrebbe essere la miglior o la peggior decisione della tua vita",
+                "notice8": "Attento, il destino dell'universo dipende da questa azione",
+                "notice9": "Sei a un clic dalla grandezza… o dalla confusione",
+                "notice10": "Promemoria amichevole: nella vita reale non c'è il tasto annulla",
+                "notice11": "Alcuni dicono che la fortuna aiuta gli audaci. Altri dicono: non toccarlo",
+                "notice12": "Potrebbe essere la tua origine da cattivo… o solo una piccola modifica",
+                "notice13": "Stai per fare un cambiamento. Fallo valere",
+                "notice14": "Un clic dalla grandezza… o dal disastro",
+                "notice15": "Potrebbe andare molto bene… o molto, molto male",
+                "notice16": "Pensa prima di cliccare. Oppure no. Fai tu",
+                "notice17": "Sei assolutamente, completamente, al 100% sicuro?",
+                "notice18": "Immagina di spiegare questo errore a un colloquio",
+                "notice19": "Qual è il peggio che può succedere? Anzi, meglio non rispondere",
+                "notice20": "Nessuna pressione, ma potrebbe essere irreversibile",
+                "notice21": "C'è una possibilità che funzioni. Una possibilità",
+                "notice22": "Un semplice cambiamento, una semplice conseguenza... o forse no",
+                "notice23": "Clicca ora, rimpiangi dopo. Giusto?",
+                "notice24": "Sicuro? Ma tipo, davvero, DAVVERO sicuro?",
+                "notice25": "Ogni grande errore inizia con un semplice clic",
+                "notice26": "Questo cambiamento sarà ricordato nei libri di storia… o forse no",
+                "notice27": "E se questo pulsante avesse sentimenti? Vorrebbe essere cliccato?",
+                "notice28": "Alcuni cambiamenti sono reversibili. Altri ti perseguitano per sempre",
+                "notice29": "Stai aggiornando un’impostazione o riscrivendo il destino?",
+                "notice30": "Speriamo che non scateni una reazione a catena",
+                "notice31": "Cliccare questo è come lanciare una moneta. Testa o croce?",
+                "notice32": "La leggenda dice che solo i più coraggiosi osano cliccare",
+                "notice33": "Se fosse un film, ora ci sarebbe una pausa drammatica",
+                "notice34": "Cosa potrebbe mai andare storto? Ultime parole famose",
+                "notice35": "Cliccare potrebbe causare conseguenze impreviste",
+                "notice36": "Un saggio una volta disse: 'Pensa prima di cliccare'",
+                "notice37": "Stai per fare la storia, o solo una piccola modifica?",
+                "notice38": "Se va male, fingiamo che non sia mai successo",
+                "notice39": "Curiosità: cliccare questo potrebbe cambiare la tua vita",
+                "notice40": "Nel dubbio, lancia una moneta. Se sei ancora in dubbio, non cliccare",
+                "notice41": "Questo è un momento di grande responsabilità. O forse no",
+                "notice42": "La leggenda dice che, una volta cliccato, non si torna indietro",
+                "notice43": "Se fosse un videogioco, questa sarebbe la schermata 'Sei sicuro?'",
+                "notice44": "Piccolo cambiamento, enormi conseguenze. Nessuna pressione",
+                "notice45": "Controlla una volta, due, tre… poi forse clicca",
+                "notice46": "Questo è il tuo momento 'prima e dopo'",
+                "notice47": "Qui non c'è rete di sicurezza. Solo fiducia",
+                "notice48": "Cliccare è come entrare nell'ignoto",
+                "notice49": "Attento, questo pulsante ha problemi di fiducia",
+                "notice50": "Alcune decisioni ci definiscono. Altre aggiornano solo le impostazioni",
+                "notice51": "L'universo osserva. Fai che ne valga la pena",
+                "notice52": "Spero tu non lo rimpianga tra cinque minuti"
+            },
+            soon: "Presto"
         },
         navigation: {
             home: 'Home',
-            search: 'Cerca',
-            explore: 'Esplora',
-            support: 'Supporto',
-            notifications: 'Notifiche',
-            messages: 'Messaggi',
-            profile: 'Profilo',
-            settings: 'Impostazioni',
-            create: 'Crea',
-            other: 'Altro',
+            search: "Cerca",
+            explore: "Esplora",
+            support: "Supporto",
+            notifications: "Notifiche",
+            messages: "Messaggi",
+            profile: "Profilo",
+            settings: "Impostazioni",
+            create: "Crea",
+            other: "Altro"
         },
         following: {
-            title: 'Timeline',
+            title: 'Timeline'
         },
         search: {
-            title: 'Cerca',
-            placeholder: 'Cerca',
-            trendingTopics: {
-                title: 'Tendenze'
-            },
+            title: "Cerca",
+            placeholder: "Cerca",
             suggestedTopics: {
-                title: 'Suggeriti'
+                title: "Suggeriti"
             },
-            topicsTopics: {
-                title: 'Tendenze'
+            trendingTopics: {
+                title: "Tendenze"
             },
             categories: {
                 manager: {
-                    title: 'Ricerche salvate',
-                },
-            },
+                    title: "Ricerche salvate",
+                    empty: "Non ci sono feed salvati"
+                }
+            }
         },
         explore: {
-            title: 'Esplora',
+            title: "Esplora",
             forYou: {
-                title: 'Scopri',
-                appBar: 'Per te',
+                title: "Scopri",
+                appBar: "Per te"
             },
             discover: {
-                title: 'Scopri',
-                appBar: 'Scopri',
+                title: "Scopri",
+                appBar: "Scopri"
             },
             latest: {
-                title: 'Ultimi',
-                appBar: 'Ultimi',
+                title: "Ultimi",
+                appBar: "Ultimi"
             },
             following: {
-                title: 'Seguiti',
-                appBar: 'Seguiti',
+                title: "Seguiti",
+                appBar: "Seguiti"
             },
             search: {
-                title: 'Cerca',
-                appBar: 'Cerca',
-            },
+                title: "Cerca",
+                appBar: "Cerca"
+            }
         },
         timeline: {
             list: {
-                name: 'Posts'
+                name: "Post"
             }
         },
         feed: {
             header: {
                 menu: {
-                    explore: 'Esplora feed',
-                    changeLayout: 'Cambia layout',
-                    reorderFeeds: 'Riordina feed',
-                    shareFeed: 'Condividi feed',
+                    explore: "Esplora feed",
+                    changeLayout: "Cambia layout",
+                    reorderFeeds: "Riordina feed",
+                    shareFeed: "Condividi feed"
                 }
             },
             list: {
-                title: 'Feed',
-                appBar: 'Feed',
+                title: "Feed",
+                appBar: "Feed"
             },
             static: {
                 following: {
-                    title: 'Seguiti',
-                    description: 'Feed personale',
-                },
+                    title: "Seguiti",
+                    description: "Feed personale"
+                }
             },
             createdBy: `Feed di {handle}`,
             categories: {
                 manager: {
-                    title: 'Categorie feed',
-                },
+                    title: "Categorie feed",
+                    empty: "Non ci sono feed salvati"
+                }
             },
             suggestions: {
-                title: 'Feed suggeriti',
+                title: "Feed suggeriti"
             },
             like: {
-                person: 'Piace a 1 persona',
-                people: 'Piace a {count} persone'
-            },
+                person: "Piace a 1 persona",
+                people: "Piace a {count} persone"
+            }
         },
         account: {
+            service: {
+                modal: {
+                    title: "Seleziona il tuo provider",
+                },
+                usingBluesky: "Sto usando Bluesky",
+                customPds: "Sto usando un altro PDS",
+                notice: {
+                    willUse: "Ti collegherai via {service}",
+                    notFound: "Sei registrato? Unisciti a Bluesky"
+                },
+                action: {
+                    add: "Aggiungi un tuo PDS"
+                }
+            },
             login: {
                 form: {
                     identifier: {
-                        label: 'Identificativo',
-                        placeholder: 'Nome utente o email',
+                        label: "Identificativo",
+                        placeholder: "Nome utente"
                     },
                     password: {
                         label: 'Password',
-                        placeholder: '',
+                        placeholder: ''
                     },
                     authFactorToken: {
-                        label: 'Conferma 2FA',
-                        placeholder: 'Codice di conferma',
+                        label: "Conferma 2FA",
+                        placeholder: "Codice di conferma"
                     },
-                    action: 'Accedi',
+                    resolver: {
+                        prompt: "Usa un diverso risolutore di maniglia:"
+                    },
+                    action: "Accedi"
                 }
             },
             switch: {
-                appBar: 'Account collegati',
+                appBar: "Account collegati"
             },
             suggestions: {
-                title: 'Account suggeriti',
+                title: "Account suggeriti"
             },
             action: {
-                or: 'o',
-                login: 'Accedi',
-                lostPassword: 'Password dimenticata?',
-                addAccount: 'Aggiungi account',
-                switchAccount: 'Cambia account',
-                logout: 'Esci',
+                or: "o",
+                login: "Accedi",
+                lostPassword: "Password dimenticata?",
+                addAccount: "Aggiungi account",
+                switchAccount: "Cambia account",
+                logout: "Esci"
             }
         },
         profile: {
             stats: {
-                posts: 'Post',
-                followers: 'Follower',
-                follows: 'Seguiti',
+                posts: "Post",
+                followers: "Follower",
+                follows: "Seguiti"
             },
             action: {
-                followProfile: 'Segui',
-                unfollowProfile: 'Smetti di seguire',
-                editProfile: 'Modifica profilo',
-                shareProfile: 'Condividi profilo',
+                followProfile: "Segui",
+                unfollowProfile: "Smetti di seguire",
+                editProfile: "Modifica profilo",
+                shareProfile: "Condividi profilo",
+                changeBanner: "Cambia banner"
             },
             collection: {
                 default: {
-                    label: 'Post'
+                    label: "Post"
                 }
             },
             media: {
@@ -180,71 +255,72 @@ export default defineI18nLocale(async locale => {
                     removeCover: "Rimuovi copertina",
                     removeFromAlbum: "Rimuovi media",
                     replaceCover: "Sostituisci copertina",
-                    replaceMedia: "Sostituisci media",
+                    replaceMedia: "Sostituisci media"
                 }
-            },
+            }
         },
         thread: {
             reply: {
                 bottomSheet: {
-                    title: 'Commenti'
+                    title: "Commenti"
                 },
                 list: {
                     empty: "Commenta per primo"
                 },
                 form: {
                     textField: {
-                        placeholder: 'Aggiungi un commento...'
-                    },
+                        placeholder: "Aggiungi un commento..."
+                    }
                 },
                 delete: {
-                    label: 'Elimina',
-                    confirm: 'Sei sicuro di voler eliminare questa risposta?'
+                    label: "Elimina",
+                    confirm: "Sei sicuro di voler eliminare questa risposta?"
                 },
                 common: {
-                    showReplies: 'Visualizza tutti i {count} commenti',
+                    showReplies: "Visualizza tutti i {count} commenti"
                 },
                 action: {
-                    reply: 'Rispondi',
-                    backToComments: 'Torna ai commenti'
-                },
+                    reply: "Rispondi",
+                    replyTo: "Risposta a",
+                    backToComments: "Torna ai commenti"
+                }
             },
             likes: {
-                person: 'persona',
-                people: 'persone',
-                beTheFirst: 'Metti mi piace per primo',
+                person: "persona",
+                people: "persone",
+                beTheFirst: "Metti mi piace per primo",
                 personLikesThis: {
                     beforeCount: '',
-                    afterCount: 'piace questo'
+                    afterCount: "piace questo"
                 },
                 peopleLikeThis: {
                     beforeCount: '',
-                    afterCount: 'piace questo'
+                    afterCount: "piace questo"
                 },
                 personWithHighlight: {
-                    beforeCount: 'Piace a {names}',
-                    afterCount: '',
+                    beforeCount: "Piace a {names}",
+                    afterCount: ''
                 },
                 peopleWithHighlight: {
-                    beforeCount: 'Piace a {names} e',
-                    afterCount: '',
+                    beforeCount: "Piace a {names} e",
+                    afterCount: ''
                 },
                 personShort: {
                     beforeCount: '',
-                    afterCount: 'mi piace',
+                    afterCount: "mi piace"
                 },
                 peopleShort: {
                     beforeCount: '',
-                    afterCount: 'mi piace',
+                    afterCount: "mi piace"
                 },
                 bottomSheet: {
-                    title: 'Piace a'
-                },
-            },
+                    title: "Piace a"
+                }
+            }
         },
         notifications: {
-            title: 'Notifiche',
-            appBar: 'Notifiche',
+            title: "Notifiche",
+            appBar: "Notifiche",
             like: "ha messo mi piace al tuo post",
             repost: "ha ripubblicato il tuo post",
             follow: "ha iniziato a seguirti",
@@ -254,30 +330,30 @@ export default defineI18nLocale(async locale => {
             unknownUser: "Qualcuno"
         },
         settings: {
-            appBar: 'Impostazioni',
+            appBar: "Impostazioni",
             navigation: {
                 account: 'Account',
-                profile: 'Profilo',
-                appearance: 'Aspetto',
+                profile: "Profilo",
+                appearance: "Aspetto",
                 privacy: 'Privacy',
-                security: 'Sicurezza',
-                management: 'Gestione',
-                language: 'Lingua',
-                grid: 'Griglie',
-                badges: 'Distinguiti',
-                development: 'Development',
-                support: 'Supporto',
-                about: 'Informazioni',
-                help: 'Aiuto',
+                security: "Sicurezza",
+                management: "Gestione",
+                language: "Lingua",
+                grid: "Griglie",
+                badges: "Distinguiti",
+                development: "Sviluppo",
+                support: "Supporto",
+                about: "Informazioni",
+                help: "Aiuto",
                 community: 'Community',
-                whatsnew: 'Novità',
+                whatsnew: "Novità"
             },
             main: {
                 appBar: 'Dashboard',
                 section: {
                     password: {
-                        title: 'Password e autenticazione',
-                    },
+                        title: "Password e autenticazione"
+                    }
                 }
             },
             account: {
@@ -286,36 +362,36 @@ export default defineI18nLocale(async locale => {
                     form: {
                         email: {
                             label: 'E-mail',
-                            placeholder: 'Inserisci il tuo indirizzo email',
+                            placeholder: "Inserisci il tuo indirizzo email"
                         },
-                        action: 'Reimposta password',
+                        action: "Reimposta password"
                     }
                 },
                 changePassword: {
-                    "action": {
-                        "changePassword": "Cambia password"
+                    action: {
+                        changePassword: "Cambia password"
                     }
                 },
                 factoryAuth: {
-                    "title": "Autenticazione a due fattori (2FA)",
-                    "description": "Richiedi un codice email per accedere al tuo account.",
-                    "action": {
-                        "enable2FA": "Abilita Email 2FA"
+                    title: "Autenticazione a due fattori (2FA)",
+                    description: "Richiedi un codice email per accedere al tuo account.",
+                    action: {
+                        enable2FA: "Abilita Email 2FA"
                     }
                 },
                 exportData: {
-                    "title": "Esporta i miei dati",
-                    "description": "L'archivio del tuo account, contenente tutti i dati pubblici. Questo file non include media incorporati o dati privati, che devono essere recuperati separatamente.",
-                    "action": {
-                        "exportMyData": "Esporta i miei dati"
+                    title: "Esporta i miei dati",
+                    description: "L'archivio del tuo account, contenente tutti i dati pubblici. Questo file non include media incorporati o dati privati, che devono essere recuperati separatamente.",
+                    action: {
+                        exportMyData: "Esporta i miei dati"
                     }
                 },
                 deleteAccount: {
-                    "title": "Eliminazione account",
-                    "description": "Disabilitare il tuo account significa che il tuo profilo, i post, i feed e le liste non saranno più visibili agli altri utenti di Bluesky. Puoi riattivare il tuo account effettuando nuovamente l'accesso.",
-                    "action": {
-                        "disableAccount": "Disabilita account",
-                        "deleteAccount": "Elimina account"
+                    title: "Eliminazione account",
+                    description: "Disabilitare il tuo account significa che il tuo profilo, i post, i feed e le liste non saranno più visibili agli altri utenti di Bluesky. Puoi riattivare il tuo account effettuando nuovamente l'accesso.",
+                    action: {
+                        disableAccount: "Disabilita account",
+                        deleteAccount: "Elimina account"
                     }
                 },
                 wip: {
@@ -324,17 +400,17 @@ export default defineI18nLocale(async locale => {
                 }
             },
             profile: {
-                appBar: 'Profilo',
+                appBar: "Profilo",
                 fields: {
                     handle: {
                         label: "Nome utente",
                         placeholder: "nomeutente",
-                        description: "Aiuta le persone a trovare il tuo account utilizzando il nome con cui sei conosciuto: il tuo nome completo, un soprannome o il nome della tua attività.",
+                        description: "Aiuta le persone a trovare il tuo account utilizzando il nome con cui sei conosciuto: il tuo nome completo, un soprannome o il nome della tua attività."
                     },
                     displayName: {
                         label: "Nome",
                         placeholder: "Nome",
-                        description: "Aiuta le persone a trovare il tuo account utilizzando il nome con cui sei conosciuto: il tuo nome completo, un soprannome o il nome della tua attività.",
+                        description: "Aiuta le persone a trovare il tuo account utilizzando il nome con cui sei conosciuto: il tuo nome completo, un soprannome o il nome della tua attività."
                     },
                     description: {
                         label: "Bio",
@@ -344,50 +420,55 @@ export default defineI18nLocale(async locale => {
                     avatar: {
                         title: "Avatar",
                         action: {
-                            change: 'Cambia avatar',
-                            remove: 'Rimuovi avatar',
+                            change: "Cambia avatar",
+                            remove: "Rimuovi avatar"
                         }
                     },
                     banner: {
                         title: "Banner",
                         action: {
-                            change: 'Cambia banner',
-                            remove: 'Rimuovi banner',
+                            change: "Cambia banner",
+                            remove: "Rimuovi banner"
                         }
-                    },
+                    }
+                }
+            },
+            theme: {
+                appBar: 'Tema',
+                fields: {
+                    dark: {
+                        title: 'Tema scuro'
+                    }
                 }
             },
             appearance: {
-                appBar: 'Aspetto',
+                appBar: "Aspetto",
                 category: {
-                    animation: 'Animazione',
+                    animation: "Animazione"
                 },
                 fields: {
                     themeName: {
                         label: "Tema",
-                        placeholder: "tema",
+                        placeholder: "tema"
                     },
                     themeVariant: {
                         label: "Variante",
-                        placeholder: "variante",
+                        placeholder: "variante"
                     },
                     themeColorPrimary: {
                         label: "Colore primario",
-                        placeholder: "#0095f6",
+                        placeholder: "#0095f6"
                     },
-                    animation: 'Animazione',
+                    animation: "Animazione",
                     animationEnabled: {
-                        title: "Cubi animati",
+                        title: "Cubi animati"
                     },
                     animationSpeed: {
-                        title: "Velocità",
-                    },
-                    animationShowBannerInstead: {
-                        title: "Mostra banner",
+                        title: "Velocità"
                     },
                     animationColors: {
-                        label: "Configuratore griglia",
-                    },
+                        label: "Configuratore griglia"
+                    }
                 },
                 unlock: {
                     title: "Il tuo profilo, il tuo stile",
@@ -395,59 +476,52 @@ export default defineI18nLocale(async locale => {
                 }
             },
             language: {
-                appBar: 'Lingua',
+                appBar: "Lingua",
                 fields: {
                     language: {
-                        label: "Lingua",
-                    },
+                        label: "Lingua"
+                    }
                 },
                 contribute: {
                     line1: "Vogliamo supportare il maggior numero di lingue, ma al momento ne sono disponibili solo alcune.",
-                    line2: "Ti piacerebbe aiutarci? Possiamo offrirti mesi gratis di Gridsky {ae} se ci aiuti con le traduzioni nella tua lingua. Maggiori informazioni su Discord",
+                    line2: "Ti piacerebbe aiutare? Più informazioni su Discord"
                 }
             },
             grid: {
-                appBar: 'Griglie profilo',
+                appBar: "Griglie profilo",
                 showcase: {
                     icons: {
                         showAll: ''
                     }
                 },
                 category: {
-                    filter: 'Filtri',
+                    filter: "Filtri",
                     layout: 'Layout',
-                    media: 'Media',
+                    media: 'Media'
                 },
                 fields: {
                     name: {
                         label: "Nome griglia",
-                        placeholder: "nome griglia",
+                        placeholder: "nome griglia"
                     },
                     icon: {
                         label: "Icona griglia",
                         placeholder: "lucide:grid",
-                    },
-                    filterInclude: {
-                        label: "Filtra per hashtag",
-                        placeholder: "#hashtag",
-                    },
-                    filterExclude: {
-                        label: "Escludi per hashtags",
-                        placeholder: "#hashtag",
+                        details: 'Scopri icone per la tua griglia su'
                     },
                     layout: {
-                        label: "Layout griglia",
+                        label: "Layout griglia"
                     },
                     videoOnly: {
-                        label: "Ottimizzato per video",
-                    },
-                },
+                        label: "Ottimizzato per video"
+                    }
+                }
             },
             menu: {
-                appBar: 'Account e Impostazioni',
+                appBar: "Account e Impostazioni"
             },
             about: {
-                appBar: 'Informazioni',
+                appBar: "Informazioni"
             }
         },
         timeAgo: {
@@ -474,8 +548,8 @@ export default defineI18nLocale(async locale => {
             badge: '',
             loading: '',
             datePicker: {
-                title: 'Seleziona data'
+                title: "Seleziona data"
             }
-        },
-    }
-})
+        }
+    };
+});
