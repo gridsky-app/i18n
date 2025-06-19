@@ -426,7 +426,7 @@
         "icon": {
           "label": "网格图标",
           "placeholder": "luctie:grid",
-          "details": "Discover icons for your grid at"
+          "details": "Browse icon at"
         },
         "filterInclude": {
           "label": "按哈希标签过滤",

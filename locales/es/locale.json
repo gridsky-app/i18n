@@ -426,7 +426,7 @@
         "icon": {
           "label": "Icono de cuadrícula",
           "placeholder": "lucide:cuadrícula",
-          "details": "Discover icons for your grid at"
+          "details": "Browse icon at"
         },
         "filterInclude": {
           "label": "Filtrar por hashtags",

@@ -426,7 +426,7 @@
         "icon": {
           "label": "Значок сетки",
           "placeholder": "lucide:grid",
-          "details": "Discover icons for your grid at"
+          "details": "Browse icon at"
         },
         "filterInclude": {
           "label": "Фильтр по хэштегам",

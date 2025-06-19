@@ -109,7 +109,7 @@
     },
     "categories": {
       "manager": {
-        "title": "Categories",
+        "title": "Search Categories",
         "empty": "There are no saved searches",
         "category": {
           "prompt": "Choose a category name"
@@ -189,7 +189,7 @@
     "createdBy": "Feed by {handle}",
     "categories": {
       "manager": {
-        "title": "Categories",
+        "title": "Feed Categories",
         "empty": "There are no saved feeds",
         "category": {
           "prompt": "Choose a category name"
@@ -239,6 +239,11 @@
         "action": "Login"
       }
     },
+    "register": {
+      "form": {
+        "action": "Register"
+      }
+    },
     "switch": {
       "appBar": "Connected accounts"
     },
@@ -263,6 +268,10 @@
     "action": {
       "followProfile": "Follow",
       "unfollowProfile": "Unfollow",
+      "muteProfile": "Mute",
+      "unmuteProfile": "Unmute",
+      "blockProfile": "Block",
+      "unblockProfile": "Unblock",
       "editProfile": "Edit profile",
       "shareProfile": "Share profile",
       "changeBanner": "Change banner"
@@ -293,6 +302,21 @@
     }
   },
   "thread": {
+    "draft": {
+      "appBar": "New post",
+      "action": {
+        "select": {
+          "desktop": {
+            "description": "Drag photos and videos here",
+            "button": "Select from computer"
+          },
+          "mobile": {
+            "description": "Select photos and videos",
+            "button": "Select from gallery"
+          }
+        }
+      }
+    },
     "reply": {
       "bottomSheet": {
         "title": "Comments"
@@ -510,23 +534,23 @@
         "animationColors": {
           "label": "Grid configurator"
         },
-        "bannerGridskyEnabled": {
-          "title": "Use Gridsky cubes animation"
+        "gridskyEnabled": {
+          "title": "Use Gridsky cubes"
         },
-        "bannerBlueskyEnabled": {
+        "blueskyEnabled": {
           "title": "Use Bluesky banner"
         },
-        "bannerShadertoyEnabled": {
-          "title": "Use Shadertoy banner"
+        "shadertoyEnabled": {
+          "title": "Use Shadertoy"
         },
-        "bannerShadertoyId": {
+        "shadertoyId": {
           "label": "Shader ID",
           "placeholder": "shadertoy.com/view/<id>"
         }
       },
       "unlock": {
         "title": "Your profile, your style",
-        "description": "Get inspired while supporting Gridsky, and unlock aesthetics for your profile"
+        "description": "Get inspired while supporting Gridsky. Unlock Æsthetics for your profile"
       }
     },
     "language": {
@@ -554,14 +578,18 @@
         "media": "Media"
       },
       "fields": {
+        "label": {
+          "label": "Grid label",
+          "placeholder": "label"
+        },
         "name": {
-          "label": "Grid name",
-          "placeholder": "grid name"
+          "label": "Grid URL",
+          "placeholder": "url"
         },
         "icon": {
           "label": "Grid icon",
           "placeholder": "lucide:grid",
-          "details": "Discover icons for your grid at"
+          "details": "Browse icon at"
         },
         "layout": {
           "label": "Grid layout"
